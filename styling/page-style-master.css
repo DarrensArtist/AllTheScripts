@@ -1,7 +1,7 @@
 /* Custom font */
 @font-face {
     font-family: 'PixeloidSans';
-    src: url('/_assets/_fonts/pixeloid-font/PixeloidSans-mLxMm.ttf') format('truetype');
+    src: url('/assets/fonts/pixeloid-font/PixeloidSans-mLxMm.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
