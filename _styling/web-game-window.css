@@ -1,0 +1,12 @@
+.web-gameboy {
+    position: relative;
+    align-items: center;
+    max-width: 100%;
+    min-width: 800px;
+    min-height: 450px;
+}
+
+.git-window {
+    margin-top: 25px;
+    width: 800px;
+}
