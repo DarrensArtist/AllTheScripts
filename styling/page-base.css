@@ -1,3 +1,10 @@
+/* Reset default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Custom font */
 @font-face {
     font-family: 'PixeloidSans';
@@ -6,14 +13,15 @@
     font-style: normal;
 }
 
-/* Reset default browser styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Base Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-family: 'PixeloidSans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* Basic body styling */
+/* Main body styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #000000;
@@ -39,7 +47,7 @@ body {
 }
 
 .banner-links {
-    list-style-type: none;
+    list-style-type:none;
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -56,35 +64,31 @@ body {
 }
 
 .company-logo {
-    color: #ffffff;
     font-size: 72px;
-    font-family: 'PixeloidSans', sans-serif;
-    font-weight: normal;
-    font-style: normal;
+
 
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
 }
 
-.page-title-banner {
-    color: #ffffff;
+.page-title {
+    text-align: center;
     font-size: 54px;
-    font-family: 'PixeloidSans', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-
-.page-title-sub-banner {
-    color: #ffffff;
-    font-size: 26px;
-    font-family: 'PixeloidSans', sans-serif;
-    font-weight: normal;
-    font-style: normal;
 }
 
 /* Main content styling */
 .main-content {
+    text-align: center;
+}
+
+.page-sub-title {
+    text-align: center;
+    font-size: 36px;
+}
+
+/* footer content styling */
+.footer {
     text-align: center;
 }
 
@@ -109,7 +113,7 @@ body {
     }
 
     .banner-links {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
     }
 
