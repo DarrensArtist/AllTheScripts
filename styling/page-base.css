@@ -30,95 +30,72 @@ body {
 
 /* Header styling */
 .header {
+    height: 32px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    color: #ffffff;
-    background-color: #000000;
-    position: relative;
-    max-width: 100%; /* Ensures the logo does not exceed the width of its container */
-    height: auto; /* Maintains the aspect ratio */
+    background-color: #252525;
 }
 
-/* Banner styling */
-.banner {
-    background-color: #000000;
+/* Navigation styling */
+.navigation {
     text-align: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    cursor: grab;
 }
 
-.banner-links {
-    list-style-type:none;
+.navigation-links {
+    list-style-type:none; 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
 }
 
-.banner-links li a {
+.navigation-links li{
+    display: inline-block;
+}
+
+.navigation-links a {
     color: #ffffff;
-    font-size: 21px;
     font-family: 'PixeloidSans', sans-serif;
     font-weight: normal;
     font-style: normal;
     text-decoration: none;
-    padding: 20px;
+    padding: 10px;
+    display: block;
 }
 
-.company-logo {
-    font-size: 72px;
+.navigation::-webkit-scrollbar {
+    display: none;
+}
 
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
+.title {
+    height: 64px;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
 .page-title {
     text-align: center;
-    font-size: 54px;
-}
-
-/* Main content styling */
-.main-content {
-    text-align: center;
+    padding: 20px;
 }
 
 .page-sub-title {
     text-align: center;
-    font-size: 36px;
+}
+
+/* Main content styling */
+.main-content {
+    min-height: 1080px; /* needs to be anchored at the bottom */
+    text-align: center;
 }
 
 /* footer content styling */
 .footer {
     text-align: center;
-}
-
-/* Responsive design for mobile screens */
-@media (max-width: 768px) {
-    .nav-menu ul {
-        flex-direction: column;
-        display: none; /* Hide menu by default on mobile */
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        width: 150px;
-    }
-
-    .nav-toggle {
-        display: block; /* Show toggle button on mobile */
-    }
-
-    .nav-menu ul.active {
-        display: flex; /* Show menu when active */
-    }
-
-    .banner-links {
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    .links-container {
-        flex-direction: column;
-        align-items: center;
-    }
 }
