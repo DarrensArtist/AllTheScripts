@@ -72,15 +72,10 @@ body {
     display: none;
 }
 
-.title {
+.page-title {
     height: 64px;
     width: auto;
     align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-.page-title {
     text-align: center;
     padding: 20px;
 }
