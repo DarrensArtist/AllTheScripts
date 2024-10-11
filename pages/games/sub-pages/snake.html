@@ -22,7 +22,7 @@
             <!-- Navigation -->
             <nav class="navigation">
                 <ul class="navigation-links">
-                    <li><h3><a href="pages/games.html">Games</a></h3></li>
+                    <li><h3><a href="pages/games/games.html">Games</a></h3></li>
                     <li><h3><a href="pages/scripts.html">Scripts</a></h3></li>
                     <li><h3><a href="pages/templates.html">Templates</a></h3></li>
                     <li><h3><a href="pages/assets.html">Assets</a></h3></li>
@@ -49,14 +49,13 @@
                   <div id="unity-progress-bar-full"></div>
                 </div>
               </div>
-
               <div id="unity-warning"> </div>
-              
               <div id="unity-footer">
                 <div id="unity-webgl-logo"></div>
                 <div id="unity-fullscreen-button"></div>
                 <div id="unity-build-title">ProjectSnake</div>
               </div>
+            </div>
 
             <script>
               var container = document.querySelector("#unity-container");
@@ -90,12 +89,12 @@
                 updateBannerVisibility();
               }
         
-              var buildUrl = "/build/ProjectSnake/Build";
+              var buildUrl = "Build";
               var loaderUrl = buildUrl + "/ProjectSnake.loader.js";
               var config = {
-                dataUrl: buildUrl + "/ProjectSnake.data.gz",
-                frameworkUrl: buildUrl + "/ProjectSnake.framework.js.gz",
-                codeUrl: buildUrl + "/ProjectSnake.wasm.gz",
+                dataUrl: buildUrl + "/ProjectSnake.data",
+                frameworkUrl: buildUrl + "/ProjectSnake.framework.js",
+                codeUrl: buildUrl + "/ProjectSnake.wasm",
                 streamingAssetsUrl: "StreamingAssets",
                 companyName: "DefaultCompany",
                 productName: "ProjectSnake",
@@ -149,10 +148,8 @@
                       });
                     };
         
-              document.body.appendChild(script);
-        
+              document.body.appendChild(script);       
             </script>
-            </div>
 
             <!-- Github Link -->
             <div class="git-div">
