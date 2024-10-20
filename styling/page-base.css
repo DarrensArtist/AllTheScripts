@@ -113,11 +113,11 @@ body {
         transform: translateX(0); /* Stay in place */
         opacity: 1;
     }
-    85% {
+    95% {
         transform: translateX(0); /* Still stay in place */
         opacity: 1;
     }
-    95% {
+    97% {
         transform: translateX(100%); /* Pan off to the right */
         opacity: 0; /* Fade out */
     }
