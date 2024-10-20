@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Base body styling */
 body {
-    max-width: 95%;
+    max-width: 90%;
     font-family: Arial, sans-serif;
     background-image: none;
     height: auto;
@@ -148,19 +148,21 @@ body {
 /* Header styling */
 .header {
     height: 100%;
+    max-height: max-content;
     width: 100%;
+    max-width: max-content;
     display: flex;
     flex-wrap: nowrap;
     justify-content: left;
     align-items: center;
-    background-color: #252525;
+    background-color: #000000;
 
     margin-left: 25px;
     margin-top: 10px;
 }
 
 .logo-header {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 .navigation-bottom {
