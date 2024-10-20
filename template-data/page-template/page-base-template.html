@@ -1,42 +1,63 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>All The Scripts</title>
-        <link rel="stylesheet" href="/../../styling/page-base.css">
-        <link rel="stylesheet" href="styling/page-pagename.css">
+
+        <!-- Base URL for all relative paths -->
+        <base href="/">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="styling/page-base.css">
     </head>
 
     <body>
+        <!-- Navigation Main -->
+        <nav class="navigation">
+            <ul class="navigation-main">
+                <!-- Main navigation items -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <ul class="navigation-social">
+                <!-- Social navigation items -->
+                <li><a href="#">X</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </nav>
+
         <!-- Header -->
         <header class="header">
-            <a href="/index.html"><img src="/../../assets/art/company-logo-favicon.png" alt="Company Logo"></a>
-        
-            <!-- Navigation -->
-            <nav class="navigation">
-                <ul class="navigation-links">
-                    <li><h3><a href="/../../pages/games.html">Games</a></h3></li>
-                    <li><h3><a href="/../../pages/scripts.html">Scripts</a></h3></li>
-                    <li><h3><a href="/../../pages/templates.html">Templates</a></h3></li>
-                    <li><h3><a href="/../../pages/assets.html">Assets</a></h3></li>
-                    <li><h3><a href="/../../pages/blog.html">Blog</a></h3></li>
-                </ul>
+            <!-- Page Title -->
+            <div>
+                <h1 class="page-title">ALL THE SCRIPTS</h1>
+            </div>
 
-                <script src="/scripts/navigation.js"></script>
-            </nav>
+            
+            
+            <a href="/index.html">
+                <img src="/assets/art/company-logo-favicon.png" alt="Company Logo">
+            </a>
         </header>
 
-        <!-- Page Title -->
-        <div>
-            <h1 class="page-title">Page Title</h1>
-        </div>
-
+        <!-- Navigation Content -->
+        <nav class="navigation"> 
+            <ul class="navigation-content">
+                <li><a href="/pages/content/games.html">Games</a></li>
+                <li><a href="/pages/content/scripts.html">Scripts</a></li>
+                <li><a href="/pages/content/templates.html">Templates</a></li>
+                <li><a href="/pages/content/assets.html">Assets</a></li>
+                <li><a href="/pages/content/blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        
         <!-- Main Content -->
         <main class="main-content">
             <div>
-                <h3 class="page-sub-title">Under Construction</h3>
             </div>
         </main>
 

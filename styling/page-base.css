@@ -13,7 +13,7 @@
     font-style: normal;
 }
 
-/* Base Heading Styles */
+/* Base Headings Style */
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     font-family: 'PixeloidSans', sans-serif;
@@ -21,46 +21,37 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 }
 
-/* Main body styling */
+/* Base body styling */
 body {
+    max-width: 95%;
     font-family: Arial, sans-serif;
+    background-image: none;
+    height: auto;
+    margin: 20px auto;
     background-color: #000000;
-    color: #333;
 }
 
-/* Header styling */
-.header {
-    height: 32px;
+/* Top navigation styling */
+.navigation-top {
     display: flex;
-    justify-content: left;
-    align-items: center;
-    background-color: #252525;
-}
-
-/* Navigation styling */
-.navigation {
-    text-align: center;
-    overflow-x: auto;
-    white-space: nowrap;
-    cursor: grab;
-}
-
-.navigation-links {
-    list-style-type:none; 
-    display: flex;
-    justify-content: flex-start;
+    justify-content: space-between; /* or 'flex-start', 'center', depending on your needs */
     flex-wrap: nowrap;
-    padding: 0;
-    margin: 0;
+    align-items: center; /* Ensures that both lists are vertically aligned */
 }
 
-.navigation-links li{
+.navigation-main {
+    list-style-type:none; 
+    justify-content: left;
+}
+
+.navigation-main li {
     display: inline-block;
 }
 
-.navigation-links a {
+.navigation-main a {
     color: #ffffff;
     font-family: 'PixeloidSans', sans-serif;
+    font-size: 13px;
     font-weight: normal;
     font-style: normal;
     text-decoration: none;
@@ -68,29 +59,195 @@ body {
     display: block;
 }
 
-.navigation::-webkit-scrollbar {
-    display: none;
+.navigation-social {
+    list-style-type:none; 
+    justify-content: right;
 }
 
-.page-title {
-    height: 64px;
-    width: auto;
+.navigation-social li {
+    display: inline-block;
+}
+
+.navigation-social a {
+    color: #ffffff;
+    font-family: 'PixeloidSans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* Container styling */
+.latest-additon-banner {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5px;
+    border: 2px solid #ffffff;
+
+    position: relative;
+    overflow: hidden; /* Ensure text doesn't overflow the banner */
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Adjust height based on your design */
+}
+
+.panning-text {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: panText 60s ease-in-out infinite; /* 60s for the full animation, adjust as needed */
+}
+
+/* Keyframes for panning effect */
+@keyframes panText {
+    0% {
+        transform: translateX(100%); /* Start outside from the right */
+        opacity: 0; /* Start transparent */
+    }
+    10% {
+        transform: translateX(0); /* Move into view */
+        opacity: 1; /* Fully visible */
+    }
+    40% {
+        transform: translateX(0); /* Stay in place */
+        opacity: 1;
+    }
+    85% {
+        transform: translateX(0); /* Still stay in place */
+        opacity: 1;
+    }
+    95% {
+        transform: translateX(100%); /* Pan off to the right */
+        opacity: 0; /* Fade out */
+    }
+    100% {
+        transform: translateX(100%); /* End outside to the right, ready to loop */
+        opacity: 0;
+    }
+}
+
+.latest-additon-banner a p {
+    color: #ffffff;
+}
+
+.latest-text-block p {
+    color: #ffffff;
+    font-weight: bold;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-right: 15px;
+    margin-left: 22px;
+
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+
+/* Header styling */
+.header {
+    height: 128px;
+    width: 512px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
     align-items: center;
-    text-align: center;
-    padding: 20px;
+    background-color: #252525;
+
+    margin-left: 25px;
+    margin-top: 10px;
 }
 
-.page-sub-title {
-    text-align: center;
+.logo-banner {
+    display: flex;
+    height: 100%;
+    width: 100%;
 }
+
+.logo-square {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.navigation-bottom {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 4px solid #ffffff; /* Match the active link underline */
+    padding-left: 25px;
+}
+
+.navigation-content {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+}
+
+.navigation-content a {
+    position: relative;
+    color: #ffffff;
+    font-family: 'PixeloidSans', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 10px 20px; /* Spacing between links */
+    display: block;
+}
+
+/* Add a thin line under each navigation link */
+.navigation-content a::after {
+    content: '';
+    position: absolute;
+    width: 0; /* Initially hidden */
+    height: 4px; /* Match the border-bottom height */
+    background-color: #ffffff;
+    bottom: -2px; /* Align with the navigation-bottom border */
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+/* For the active page, keep the underline matching the bottom border */
+.navigation-content a.active::after {
+    width: 100%; /* Fully visible */
+    height: 4px; /* Same thickness as the nav border */
+}
+
+/* On hover, increase the underline size slightly */
+.navigation-content a.active:hover::after,
+.navigation-content a:hover::after {
+    width: 100%; /* Full width on hover */
+    height: 6px; /* Slightly bold on hover */
+}
+
+
 
 /* Main content styling */
 .main-content {
     min-height: 1080px; /* needs to be anchored at the bottom */
-    text-align: center;
+    align-items: center;
+}
+
+.introduction {
+    padding-left: 10px;
+    padding-Right: 10px;
+
+    text-align: left;
+    color: white;
+
+}
+.introduction p {
+    padding-top: 5px;
+    padding-bottom: 25px;
 }
 
 /* footer content styling */
 .footer {
     text-align: center;
 }
+
