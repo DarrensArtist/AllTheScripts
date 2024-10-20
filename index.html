@@ -10,9 +10,16 @@
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="styling/page-base.css">
+        <link rel="stylesheet" href="styling/responsive-design.css">
     </head>
 
     <body>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <!-- Navigation Main -->
         <nav class="navigation-top">
             <ul class="navigation-main">
@@ -42,14 +49,8 @@
 
         <!-- Header -->
         <header class="header">
-            <!-- Company Logo -->
-            <a class="logo-square" href="/index.html">
-                <img src="/assets/art/logo-square.png" alt="Company Logo Square">
-            </a>
-            <!-- Page Title -->
-            <a class="logo-banner" href="">
-                <img src="/assets/art/logo-banner.png" alt="Company Logo Banner">
-            </a>
+            <!-- Logo Header -->
+            <img class="logo-header" src="/assets/art/logo-header.png" alt="Company Logo Square">
         </header>
 
         <!-- Navigation Content -->
@@ -73,5 +74,9 @@
         <footer class="footer">
             <h2>Footer</h2>
         </footer>
+
+        <!-- JavaScript for Hamburger Menu -->
+        <script src="/scripts/toggle-menu-visibility.js"></script>
+
     </body>
 </html>

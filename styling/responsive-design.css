@@ -1,0 +1,63 @@
+/* Styles for the hamburger button */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .navigation-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation-main,
+    .navigation-social,
+    .navigation-content {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navigation-main.active,
+    .navigation-social.active,
+    .navigation-content.active {
+        display: flex;
+    }
+
+    /* Adjust the padding and layout for smaller screens */
+    .navigation-main a,
+    .navigation-social a,
+    .navigation-content a {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #fff; /* Add borders for separation */
+    }
+
+    /* Ensure header scales properly */
+    .header {
+        flex-direction: row; /* Stack the images vertically on smaller screens */
+        justify-content: center;
+    }
+
+    .logo-header img {
+        max-width: 100%;
+    }
+}
+

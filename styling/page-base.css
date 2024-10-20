@@ -147,8 +147,8 @@ body {
 
 /* Header styling */
 .header {
-    height: 128px;
-    width: 512px;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: left;
@@ -159,16 +159,8 @@ body {
     margin-top: 10px;
 }
 
-.logo-banner {
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-
-.logo-square {
-    display: flex;
-    height: 100%;
-    width: 100%;
+.logo-header {
+    max-width: 100%;
 }
 
 .navigation-bottom {
