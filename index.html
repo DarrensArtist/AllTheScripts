@@ -14,11 +14,19 @@
     </head>
 
     <body>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <header class="responsive-design-header">
+            <div class="hamburger" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <img class="responsive-design-logo" src="/assets/art/logo-header.png" alt="Company Logo Header">
+           
+            <div class="search-button">
+                <button id="search-btn">Search</button>
+            </div>
+        </header>        
 
         <!-- Navigation Main -->
         <nav class="navigation-top">
@@ -50,7 +58,7 @@
         <!-- Header -->
         <header class="header">
             <!-- Logo Header -->
-            <img class="logo-header" src="/assets/art/logo-header.png" alt="Company Logo Square">
+            <img class="logo-header" src="/assets/art/logo-header.png" alt="Company Logo Header">
         </header>
 
         <!-- Navigation Content -->
@@ -77,6 +85,7 @@
 
         <!-- JavaScript for Hamburger Menu -->
         <script src="/scripts/toggle-menu-visibility.js"></script>
+        <script src="/scripts/hide-reveal-header.js"></script>
 
     </body>
 </html>

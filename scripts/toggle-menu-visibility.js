@@ -1,11 +1,11 @@
-// JavaScript to toggle navigation on hamburger click
-const hamburger = document.querySelector('.hamburger');
-const navMain = document.querySelector('.navigation-main');
-const navSocial = document.querySelector('.navigation-social');
-const navContent = document.querySelector('.navigation-content');
+// Hamburger menu toggle
+const hamburger = document.getElementById('hamburger-btn');
+const navigationMain = document.querySelector('.navigation-main'); // Your main nav
+const navigationSocial = document.querySelector('.navigation-social'); // Your social nav
+const navigationContent = document.querySelector('.navigation-content'); // Content nav
 
-hamburger.addEventListener('click', () => {
-    navMain.classList.toggle('active');
-    navSocial.classList.toggle('active');
-    navContent.classList.toggle('active');
+hamburger.addEventListener('click', function () {
+    navigationMain.classList.toggle('active');
+    navigationSocial.classList.toggle('active');
+    navigationContent.classList.toggle('active');
 });

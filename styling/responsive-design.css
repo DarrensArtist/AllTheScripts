@@ -1,3 +1,15 @@
+/* responsive-design.css */
+
+/* Responsive Header */
+.responsive-design-header {
+    display: none;
+}
+
+/* Hide the header initially */
+.responsive-design-header.hidden {
+    transform: translateY(-100%);
+}
+
 /* Styles for the hamburger button */
 .hamburger {
     display: none;
@@ -15,8 +27,48 @@
     background-color: #ffffff;
 }
 
+/* Search button styling */
+.search-button {
+    display: flex;
+    justify-content: center;
+}
+
+.search-button button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-button button:hover {
+    background-color: #f0f0f0;
+}
+
 /* Media query for small screens */
 @media (max-width: 768px) {
+    .header {
+        display: none;
+    }
+
+    /* Header adjustment */
+    .responsive-design-header {
+        display: flex;
+        flex-direction: row; /* Horizontal alignment */
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        z-index: 1000;
+        transition: transform 0.3s ease-in-out; /* Smooth transitions */
+    }
+
     .navigation-top {
         flex-direction: column;
         align-items: flex-start;
@@ -29,10 +81,6 @@
         flex-direction: column;
         width: 100%;
         margin-top: 10px;
-    }
-
-    .hamburger {
-        display: flex;
     }
 
     .navigation-main.active,
@@ -50,14 +98,16 @@
         border-bottom: 1px solid #fff; /* Add borders for separation */
     }
 
-    /* Ensure header scales properly */
-    .header {
-        flex-direction: row; /* Stack the images vertically on smaller screens */
-        justify-content: center;
+    .hamburger {
+        display: flex;
     }
 
-    .logo-header {
-        max-width: 100%;
+    .responsive-design-logo {
+        width: 50%;
+    }
+
+    .search-button button {
+        padding: 8px 10px;
+        font-size: 14px;
     }
 }
-
