@@ -78,6 +78,10 @@
         align-items: flex-start;
     }
 
+    .navigation-bottom {
+        border-bottom: 0px
+    }
+
     .navigation-main,
     .navigation-social,
     .navigation-content {
@@ -88,14 +92,12 @@
     }
 
     .navigation-main.active,
-    .navigation-social.active,
     .navigation-content.active {
         display: flex;
     }
 
     /* Adjust the padding and layout for smaller screens */
     .navigation-main a,
-    .navigation-social a,
     .navigation-content a {
         padding: 15px;
         text-align: left;
