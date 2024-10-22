@@ -49,6 +49,10 @@
 
 /* Media query for small screens */
 @media (max-width: 768px) {
+    .latest-additon-banner {
+        display: none; 
+    }
+    
     .header {
         display: none;
     }
