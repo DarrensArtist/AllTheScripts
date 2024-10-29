@@ -53,60 +53,65 @@
 .body {
     min-height: 100vh
 }
-    .latest-additon-banner {
-        display: none; 
-    }
+
+.navigation-top {
+    display: none;
+}
+
+.latest-additon-banner {
+     display: none; 
+}
     
-    .header {
-        display: none;
-    }
+.header {
+    display: none;
+}
 
-    .navigation-top {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+/* Responsive Header */
+.responsive-design-header {
+    display: inline-flex;
+    flex-direction: row; /* Horizontal alignment */
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out; /* Smooth transitions */
+}
 
-    .navigation-bottom {
-        border-bottom: 0px
-    }
+/* Overlay Navigation Menu */
+.overlay-nav {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Initially hidden off-screen */
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+    transition: left 0.4s ease; /* Smooth slide-in effect */
+    z-index: 10; /* Make sure it overlays content */
+}
 
-    .navigation-main,
-    .navigation-social,
-    .navigation-content {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-    }
+/* Overlay menu open state */
+.overlay-nav.open {
+    left: 0; /* Slide in from left */
+}
 
-    .navigation-main.active,
-    .navigation-content.active {
-        display: flex;
-    }
+/* Navigation menu items */
+.overlay-nav ul {
+    list-style: none;
+    padding: 50px; /* Adjust padding for styling */
+    text-align: center;
+}
 
-    /* Adjust the padding and layout for smaller screens */
-    .navigation-main a,
-    .navigation-content a {
-        padding: 15px;
-        text-align: left;
-        border-bottom: 1px solid #fff; /* Add borders for separation */
-    }
-
-    /* Header adjustment */
-    .responsive-design-header {
-        display: inline-flex;
-        flex-direction: row; /* Horizontal alignment */
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #000000;
-        z-index: 1000;
-        transition: transform 0.3s ease-in-out; /* Smooth transitions */
-    }
+.overlay-nav ul li a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
 
     .hamburger {
         display: inline-flex;
