@@ -70,6 +70,10 @@
     display: none;
 }
 
+.navigation-bottom {
+    display: none;
+}
+
 .latest-additon-banner {
      display: none; 
 }
