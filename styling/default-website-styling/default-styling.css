@@ -1,0 +1,53 @@
+/* default-styling.css */
+
+/* Add Custom font */
+@font-face {
+    font-family: 'PixeloidSans';
+    src: url('/assets/fonts/pixeloid-font/PixeloidSans-mLxMm.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Define CSS variables */
+:root {
+    /* Spacing */
+    --container-padding: auto;
+    --container-margin: auto;
+    --container-max-height: auto;
+    --container-max-width: auto;
+
+    /* Colors */
+    --primary-color: #ffffff; /* Main text color */
+    --secondary-color: #000000; /* Background color */
+    --accent-color: #ff6600; /* Accent color for buttons, links, etc. */
+
+    /* Typography */
+    --font-heading: 'PixeloidSans', sans-serif;
+    --font-body: Arial, sans-serif;
+}
+
+/* Base body styling */
+body {
+    /* Container */
+    max-height: var(--container-max-height);
+    max-width: var(--container-max-width);
+
+    margin: var(--container-margin);
+    padding: var(--container-padding);
+
+    background-image: none;
+    background-color: var(--secondary-color);
+}
+
+/* Base Headings Style */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+}
+
+/* Base Text styling */
+li, p, a { 
+    color: var(--primary-color);
+    font-family: var(--font-body);
+    line-height: 1.6; 
+}

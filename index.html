@@ -9,43 +9,33 @@
         <base href="/">
 
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="styling/page-base.css">
-        <link rel="stylesheet" href="styling/responsive-design.css">
+        <link rel="stylesheet" href="styling/default-website-styling/universal-style-reset.css">
+        <link rel="stylesheet" href="styling/default-website-styling/default-styling.css">
+        <link rel="stylesheet" href="styling/default-website-styling/base-page-styling.css">
+        <link rel="stylesheet" href="styling/default-website-styling/responsive-design.css">
+
+        <link rel="stylesheet" href="styling/coming-soon-styling/coming-soon-tooltip.css">
     </head>
 
-    <body>
-        <header class="responsive-design-header">
-            <div class="hamburger" id="hamburger-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            
-            <img class="responsive-design-logo" src="/assets/art/logo-header.png" alt="Company Logo Header">
-           
-            <div class="search-button">
-                <button id="search-btn">Search</button>
-            </div>
-        </header>        
-
-        <!-- Navigation Main -->
+    <body>     
+        <!-- Top Navigation Block -->
         <nav class="navigation-top">
             <ul class="navigation-main">
                 <!-- Main navigation items -->
-                <li><a href="#">Home</a></li>
-                <li><a href="/pages/main/about-us.html">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="coming-soon-tooltip">Home</a></li>
+                <li><a href="#" class="coming-soon-tooltip">About Us</a></li>
+                <li><a href="#" class="coming-soon-tooltip">Contact</a></li>
             </ul>
 
             <ul class="navigation-social">
                 <!-- Social navigation items -->
-                <li><a href="#">X</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="#" class="coming-soon-tooltip">X</a></li>
+                <li><a href="#" class="coming-soon-tooltip">Facebook</a></li>
+                <li><a href="#" class="coming-soon-tooltip">Instagram</a></li>
             </ul>
         </nav>
 
-        <!-- Latest Addition Banner -->
+        <!-- Latest Addition Banner Block -->
         <div class="latest-additon-banner">
             <div class="latest-text-block">
                 <p>Latest</p>
@@ -55,37 +45,53 @@
             </a>
         </div>
 
-        <!-- Header -->
+        <!-- Header Block -->
         <header class="header">
             <!-- Logo Header -->
             <img class="logo-header" src="/assets/art/logo-header.png" alt="Company Logo Header">
         </header>
 
-        <!-- Navigation Content -->
+        <!-- Responsive Header Block -->
+        <header class="responsive-design-header">
+            <div class="hamburger" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="responsive-design-logo">
+                <img src="/assets/art/logo-header.png" alt="Company Logo Header">
+            </div>
+
+            <div class="search-button">
+                <button id="search-btn">S</button>
+            </div>
+        </header>   
+
+        <!-- Bottom Navigation Block -->
         <nav class="navigation-bottom"> 
+            <!-- Content navigation items -->
             <ul class="navigation-content">
                 <li><a href="/index.html" class="active" >Home</a></li>
-                <li><a href="/pages/content/playandbuild.html">Play & Build</a></li>
-                <li><a href="/pages/content/scripts.html">Scripts</a></li>
-                <li><a href="/pages/content/documentsandtemplates.html">Documents & Templates</a></li>
-                <li><a href="/pages/content/assets.html">Assets</a></li>
-                <li><a href="/pages/content/blog.html">Blog</a></li>
+                <li><a href="#" >Play & Build</a></li>
+                <li><a href="#" >Scripts</a></li>
+                <li><a href="#" >Documents & Templates</a></li>
+                <li><a href="#" >Assets</a></li>
+                <li><a href="#" >Blog</a></li>
             </ul>
         </nav>
         
-        <!-- Main Content -->
+        <!-- Main Content Block-->
         <main class="main-content">
-            
         </main>
 
-        <!-- Footer -->
+        <!-- Footer Block-->
         <footer class="footer">
             <h2>Footer</h2>
         </footer>
 
-        <!-- JavaScript for Hamburger Menu -->
+        <!-- JavaScript -->
         <script src="/scripts/toggle-menu-visibility.js"></script>
         <script src="/scripts/hide-reveal-header.js"></script>
-
     </body>
 </html>

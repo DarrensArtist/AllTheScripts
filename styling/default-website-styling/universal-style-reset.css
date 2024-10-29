@@ -1,0 +1,115 @@
+/* universal-style-reset.css */
+
+/* Universal reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default styling for elements */
+html,
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+blockquote,
+figure,
+dl,
+dd,
+ol, ul,
+pre,
+table,
+th, td,
+button,
+input,
+textarea,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+}
+
+/* Set default font-smoothing for better text rendering */
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+/* Remove list styles */
+ol, ul {
+    list-style: none;
+}
+
+/* Remove quotes from blockquotes */
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+th, td {
+    padding: 0;
+    text-align: left;
+}
+
+/* Forms */
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    border: none;
+    background: none;
+    color: inherit;
+    line-height: inherit;
+    appearance: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* Anchor tags */
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Media elements */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}

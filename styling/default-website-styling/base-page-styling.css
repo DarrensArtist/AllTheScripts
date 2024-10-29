@@ -1,97 +1,96 @@
-/* page-base.css */
-
-/* Reset default browser styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Custom font */
-@font-face {
-    font-family: 'PixeloidSans';
-    src: url('/assets/fonts/pixeloid-font/PixeloidSans-mLxMm.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Base Headings Style */
-h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
-    font-family: 'PixeloidSans', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Base body styling */
-body {
-    max-width: 90%;
-    font-family: Arial, sans-serif;
-    background-image: none;
-    height: auto;
-    margin: 20px auto;
-    background-color: #000000;
-}
-
 /* Top navigation styling */
 .navigation-top {
     display: flex;
     justify-content: space-between; /* or 'flex-start', 'center', depending on your needs */
     flex-wrap: nowrap;
-    align-items: center; /* Ensures that both lists are vertically aligned */
 }
 
-.navigation-main {
-    list-style-type:none; 
+/* Navigation items for main links */
+.navigation-main li {
+    display: inline-block;
     justify-content: left;
 }
 
-.navigation-main li {
-    display: inline-block;
-}
-
 .navigation-main a {
-    color: #ffffff;
-    font-family: 'PixeloidSans', sans-serif;
-    font-size: 13px;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: none;
-    padding: 10px;
+    position: relative;
     display: block;
+    padding: 10px;
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    font-size: 13px;
+    transition: color 0.3s ease; /* Smooth transition for text color change */
 }
 
-.navigation-social {
-    list-style-type:none; 
+/* Hide original text color on hover and display "Coming Soon" */
+.navigation-main a:hover {
+    color: transparent; /* Hide original text color */
+}
+
+.navigation-main a:hover::before {
+    content: 'Coming Soon';
+    color: var(--primary-color); /* Color for "Coming Soon" */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Navigation items for social links */
+.navigation-social li {
+    display: inline-block;
     justify-content: right;
 }
 
-.navigation-social li {
-    display: inline-block;
-}
-
 .navigation-social a {
-    color: #ffffff;
-    font-family: 'PixeloidSans', sans-serif;
-    font-size: 13px;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: none;
-    padding: 10px;
+    position: relative;
     display: block;
+    padding: 10px;
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    font-size: 13px;
+    transition: color 0.3s ease;
 }
 
-/* Container styling */
+/* Social link hover effect to display "Coming Soon" */
+.navigation-social a:hover {
+    color: transparent;
+}
+
+.navigation-social a:hover::before {
+    content: 'Coming Soon';
+    color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
 .latest-additon-banner {
     display: flex;
-    flex-wrap: nowrap;
-    padding: 5px;
-    border: 2px solid #ffffff;
+    width: 100%; /* Adjust width as needed */
+    height: 25px;
 
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 2px solid var(--primary-color);
     position: relative;
     overflow: hidden; /* Ensure text doesn't overflow the banner */
-    width: 100%; /* Adjust width as needed */
-    height: auto; /* Adjust height based on your design */
+}
+
+.latest-text-block p {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 15px;
+    margin-left: 22px;
+
+    color: var(--primary-color);
+    font-weight: bold;
+
+
+    border-left: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
 }
 
 .panning-text {
@@ -129,81 +128,73 @@ body {
     }
 }
 
-.latest-additon-banner a p {
-    color: #ffffff;
-}
-
-.latest-text-block p {
-    color: #ffffff;
-    font-weight: bold;
-
-    padding-left: 15px;
-    padding-right: 15px;
-
-    margin-right: 15px;
-    margin-left: 22px;
-
-    border-left: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-}
-
 /* Header styling */
 .header {
-    height: 100%;
-    max-height: max-content;
-    width: 100%;
-    max-width: max-content;
     display: flex;
+    margin-left: 25px;
+    margin-top: 10px;
+    
     flex-wrap: nowrap;
     justify-content: left;
     align-items: center;
-    background-color: #000000;
-
-    margin-left: 25px;
-    margin-top: 10px;
+    background-color: var(--secondary-color);
 }
 
 .logo-header {
     max-width: 50%;
 }
 
+/* Container for content navigation*/
 .navigation-bottom {
     position: relative;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: block;
+    justify-content: space-evenly;
+
     border-bottom: 4px solid #ffffff; /* Match the active link underline */
     padding-left: 25px;
 }
 
 .navigation-content {
-    list-style-type: none;
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    padding: 0;
-    margin: 0;
-    font-size: 17px;
 }
 
+/* Base styling for navigation links */
 .navigation-content a {
     position: relative;
     color: #ffffff;
     font-family: 'PixeloidSans', sans-serif;
+    font-size: 17px;
     font-weight: normal;
-    text-decoration: none;
     padding: 10px 20px; /* Spacing between links */
-    display: block;
+    transition: color 0.3s ease; /* Smooth transition for text color change */
+}
+
+/* Text change on hover */
+.navigation-content a:hover {
+    color: transparent; /* Hide original text color */
+}
+
+/* Display "Coming Soon" text on hover */
+.navigation-content a:hover::before {
+    content: 'Coming Soon'; /* Display alternative text */
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--primary-color); /* Choose a color that stands out on hover */
 }
 
 /* Add a thin line under each navigation link */
 .navigation-content a::after {
     content: '';
     position: absolute;
-    width: 0; /* Initially hidden */
-    height: 4px; /* Match the border-bottom height */
-    background-color: #ffffff;
-    bottom: -2px; /* Align with the navigation-bottom border */
+    width: 100%; /* Full width on hover */
+    background-color: var(--primary-color);
+    bottom: 5px; /* Align with the navigation-bottom border */
     left: 0;
     transition: all 0.3s ease;
 }
@@ -217,10 +208,9 @@ body {
 /* On hover, increase the underline size slightly */
 .navigation-content a.active:hover::after,
 .navigation-content a:hover::after {
-    width: 100%; /* Full width on hover */
+    width: 100%;
     height: 6px; /* Slightly bold on hover */
 }
-
 
 
 /* Main content styling */
@@ -242,8 +232,7 @@ body {
     padding-bottom: 25px;
 }
 
-/* footer content styling */
 .footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
-
