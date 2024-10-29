@@ -1,97 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>All The Scripts</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All The Scripts</title>
 
-        <!-- Base URL for all relative paths -->
-        <base href="/">
+    <!-- Base URL for all relative paths -->
+    <base href="/">
 
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="styling/default-website-styling/universal-style-reset.css">
-        <link rel="stylesheet" href="styling/default-website-styling/default-styling.css">
-        <link rel="stylesheet" href="styling/default-website-styling/base-page-styling.css">
-        <link rel="stylesheet" href="styling/default-website-styling/responsive-design.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styling/default-website-styling/universal-style-reset.css">
+    <link rel="stylesheet" href="styling/default-website-styling/default-styling.css">
+    <link rel="stylesheet" href="styling/default-website-styling/base-page-styling.css">
+    <link rel="stylesheet" href="styling/default-website-styling/responsive-design.css">
 
-        <link rel="stylesheet" href="styling/coming-soon-styling/coming-soon-tooltip.css">
-    </head>
+    <link rel="stylesheet" href="styling/coming-soon/coming-soon.css"> <!-- Separate Coming Soon Styling -->
+</head>
 
-    <body>     
-        <!-- Top Navigation Block -->
-        <nav class="navigation-top">
-            <ul class="navigation-main">
-                <!-- Main navigation items -->
-                <li><a href="#" class="coming-soon-tooltip">Home</a></li>
-                <li><a href="#" class="coming-soon-tooltip">About Us</a></li>
-                <li><a href="#" class="coming-soon-tooltip">Contact</a></li>
-            </ul>
+<body>
+    <!-- Top Navigation Block -->
+    <nav class="navigation-top">
+        <ul class="navigation-main">
+            <!-- Main navigation items with cs-msg class -->
+            <li><a href="/index.html" class="">Home</a></li>
+            <li><a href="/pages/main/about-us.html" class="">About Us</a></li>
+            <li><a href="#" class="cs-msg">Contact</a></li>
+        </ul>
 
-            <ul class="navigation-social">
-                <!-- Social navigation items -->
-                <li><a href="#" class="coming-soon-tooltip">X</a></li>
-                <li><a href="#" class="coming-soon-tooltip">Facebook</a></li>
-                <li><a href="#" class="coming-soon-tooltip">Instagram</a></li>
-            </ul>
-        </nav>
+        <ul class="navigation-social">
+            <!-- Social navigation items with cs-msg class -->
+            <li><a href="#" class="cs-msg">X</a></li>
+            <li><a href="#" class="cs-msg">Facebook</a></li>
+            <li><a href="#" class="cs-msg">Instagram</a></li>
+        </ul>
+    </nav>
 
-        <!-- Latest Addition Banner Block -->
-        <div class="latest-additon-banner">
-            <div class="latest-text-block">
-                <p>Latest</p>
-            </div>
-            <a href="/pages/games/sub-pages/snake.html">
-                <p class="panning-text">Check out our new play and build game Project:Snake</p>
-            </a>
+    <!-- Latest Addition Banner Block -->
+    <div class="latest-additon-banner">
+        <div class="latest-text-block">
+            <p>Latest</p>
+        </div>
+        <a href="/pages/games/sub-pages/snake.html">
+            <p class="panning-text">Check out our new play and build game Project:Snake</p>
+        </a>
+    </div>
+
+    <!-- Header Block -->
+    <header class="header">
+        <!-- Logo Header -->
+        <img class="logo-header" src="/assets/art/logo-header.png" alt="Company Logo Header">
+    </header>
+
+    <!-- Responsive Header Block -->
+    <header class="responsive-design-header">
+        <div class="hamburger" id="hamburger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div class="responsive-design-logo">
+            <img src="/assets/art/logo-header.png" alt="Company Logo Header">
         </div>
 
-        <!-- Header Block -->
-        <header class="header">
-            <!-- Logo Header -->
-            <img class="logo-header" src="/assets/art/logo-header.png" alt="Company Logo Header">
-        </header>
+        <div class="search-button">
+            <button id="search-btn">S</button>
+        </div>
+    </header>   
 
-        <!-- Responsive Header Block -->
-        <header class="responsive-design-header">
-            <div class="hamburger" id="hamburger-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            
-            <div class="responsive-design-logo">
-                <img src="/assets/art/logo-header.png" alt="Company Logo Header">
-            </div>
+    <!-- Bottom Navigation Block -->
+    <nav class="navigation-bottom"> 
+        <!-- Content navigation items with cs-msg class -->
+        <ul class="navigation-content">
+            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="#" class="cs-msg">Play & Build</a></li>
+            <li><a href="#" class="cs-msg">Scripts</a></li>
+            <li><a href="#" class="">Documents & Templates</a></li>
+            <li><a href="#" class="cs-msg">Assets</a></li>
+            <li><a href="#" class="cs-msg">Blog</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main Content Block-->
+    <main class="main-content">
+    </main>
 
-            <div class="search-button">
-                <button id="search-btn">S</button>
-            </div>
-        </header>   
+    <!-- Footer Block-->
+    <footer class="footer">
+        <h2>Footer</h2>
+    </footer>
 
-        <!-- Bottom Navigation Block -->
-        <nav class="navigation-bottom"> 
-            <!-- Content navigation items -->
-            <ul class="navigation-content">
-                <li><a href="/index.html" class="active" >Home</a></li>
-                <li><a href="#" >Play & Build</a></li>
-                <li><a href="#" >Scripts</a></li>
-                <li><a href="#" >Documents & Templates</a></li>
-                <li><a href="#" >Assets</a></li>
-                <li><a href="#" >Blog</a></li>
-            </ul>
-        </nav>
-        
-        <!-- Main Content Block-->
-        <main class="main-content">
-        </main>
-
-        <!-- Footer Block-->
-        <footer class="footer">
-            <h2>Footer</h2>
-        </footer>
-
-        <!-- JavaScript -->
-        <script src="/scripts/toggle-menu-visibility.js"></script>
-        <script src="/scripts/hide-reveal-header.js"></script>
-    </body>
+    <!-- JavaScript -->
+    <script src="/scripts/toggle-menu-visibility.js"></script>
+    <script src="/scripts/hide-reveal-header.js"></script>
+</body>
 </html>
