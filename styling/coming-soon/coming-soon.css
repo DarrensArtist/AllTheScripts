@@ -1,13 +1,15 @@
 /* Coming Soon text appearance */
 .navigation-main a.cs-msg:hover,
 .navigation-social a.cs-msg:hover,
-.navigation-content a.cs-msg:hover {
+.navigation-content a.cs-msg:hover,
+.navigation-overlay a.cs-msg:hover {
     color: transparent; /* Hide original text color */
 }
 
 .navigation-main a.cs-msg:hover::before,
 .navigation-social a.cs-msg:hover::before,
-.navigation-content a.cs-msg:hover::before {
+.navigation-content a.cs-msg:hover::before, 
+.navigation-overlay a.cs-msg:hover::before {
     content: 'Coming Soon';
     color: var(--primary-color);
     position: absolute;

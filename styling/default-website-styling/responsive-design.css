@@ -82,7 +82,7 @@
 }
 
 /* Overlay Navigation Menu */
-.overlay-nav {
+.navigation-overlay {
     position: fixed;
     top: 0;
     left: -100%; /* Initially hidden off-screen */
@@ -94,23 +94,28 @@
 }
 
 /* Overlay menu open state */
-.overlay-nav.open {
+.navigation-overlay.open {
     left: 0; /* Slide in from left */
 }
 
 /* Navigation menu items */
-.overlay-nav ul {
+.navigation-overlay ul {
     list-style: none;
     padding: 50px; /* Adjust padding for styling */
     text-align: center;
 }
 
-.overlay-nav ul li a {
-    color: #ffffff;
-    font-size: 1.5rem;
-    display: block;
-    padding: 15px;
-    text-decoration: none;
+.navigation-overlay li {
+    padding-left: 20px;
+    padding-bottom: 20pxu;
+}
+
+.navigation-overlay a {
+    position: relative;
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    font-size: 13px;
+    text-align: center;
 }
 
     .hamburger {

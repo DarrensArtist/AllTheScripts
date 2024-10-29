@@ -1,6 +1,6 @@
 // Select the menu elements
 const hamburgerBtn = document.getElementById('hamburger-btn');
-const overlayNav = document.getElementById('overlay-nav');
+const overlayNav = document.getElementById('navigation-overlay');
 
 // Toggle the overlay menu on hamburger click
 hamburgerBtn.addEventListener('click', () => {
