@@ -138,7 +138,7 @@
     width: 100%;
     height: 4px; /* Base height for the underline */
     background-color: var(--primary-color);
-    bottom: -7px;
+    bottom: -8px;
     left: 0;
     transition: height 0.3s ease; /* Smooth transition for height */
 }
@@ -146,14 +146,14 @@
 /* For the active page, keep the underline matching the bottom border */
 .navigation-content a.active::after {
     width: 100%; /* Fully visible */
-    height: 6px; /* Same thickness as the nav border */
+    height: 7px;
 }
 
 /* On hover, increase the underline size slightly */
 .navigation-content a.active:hover::after,
 .navigation-content a:hover::after {
     width: 100%;
-    height: 8px; /* Slightly bold on hover */
+    height: 9px; /* Slightly bold on hover */
 }
 
 /* Main content styling */

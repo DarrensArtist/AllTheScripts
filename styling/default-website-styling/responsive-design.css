@@ -1,5 +1,17 @@
 /* responsive-design.css */
 
+/* Overlay Navigation Menu */
+.navigation-overlay {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Initially hidden off-screen */
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+    transition: left 0.4s ease; /* Smooth slide-in effect */
+    z-index: 10; /* Make sure it overlays content */
+}
+
 /* Responsive Header */
 .responsive-design-header {
     display: none;
@@ -81,18 +93,6 @@
     transition: transform 0.3s ease-in-out; /* Smooth transitions */
 }
 
-/* Overlay Navigation Menu */
-.navigation-overlay {
-    position: fixed;
-    top: 0;
-    left: -100%; /* Initially hidden off-screen */
-    width: 50%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
-    transition: left 0.4s ease; /* Smooth slide-in effect */
-    z-index: 10; /* Make sure it overlays content */
-}
-
 /* Overlay menu open state */
 .navigation-overlay.open {
     left: 0; /* Slide in from left */
@@ -100,9 +100,8 @@
 
 /* Navigation menu items */
 .navigation-overlay ul {
-    list-style: none;
     padding: 50px; /* Adjust padding for styling */
-    text-align: center;
+    text-align: left;
 }
 
 .navigation-overlay li {
@@ -118,24 +117,24 @@
     text-align: center;
 }
 
-    .hamburger {
-        display: inline-flex;
-        min-height: 25px;
-        min-width: 25px;
-    }
+.hamburger {
+    display: flex;
+    min-height: 25px;
+    min-width: 25px;
+}
 
-    .responsive-design-logo {
-        display: inline;
-        align-items: center;
-    }
+.responsive-design-logo {
+    display: inline;
+    align-items: center;
+}
 
-    .responsive-design-logo img {
-        min-height: 25px;
+.responsive-design-logo img {
+    min-height: 25px;
         
-    }
+}
 
-    .search-button button {
-        padding: 8px 10px;
-        font-size: 14px;
-    }
+.search-button button {
+    padding: 8px 10px;
+    font-size: 14px;
+}
 }

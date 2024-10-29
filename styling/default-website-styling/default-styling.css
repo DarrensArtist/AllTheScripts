@@ -46,8 +46,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Base Text styling */
-li, p, a { 
+ul, li, p, a { 
     color: var(--primary-color);
     font-family: var(--font-body);
     line-height: 1.6; 
+}
+
+ul, li {
+    list-style: none;
 }

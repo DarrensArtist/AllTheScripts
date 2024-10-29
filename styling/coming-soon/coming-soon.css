@@ -8,13 +8,22 @@
 
 .navigation-main a.cs-msg:hover::before,
 .navigation-social a.cs-msg:hover::before,
-.navigation-content a.cs-msg:hover::before, 
-.navigation-overlay a.cs-msg:hover::before {
+.navigation-content a.cs-msg:hover::before {
     content: 'Coming Soon';
     color: var(--primary-color);
     position: absolute;
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%) scale(0.9); /* Center and scale down slightly */
+    white-space: nowrap; /* Ensure single line */
+}
+
+.navigation-overlay a.cs-msg:hover::before {
+    content: 'Coming Soon';
+    color: var(--primary-color);
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 0%; /* Center horizontally */
+    transform: translate(10%, -50%) scale(0.9); /* Center and scale down slightly */
     white-space: nowrap; /* Ensure single line */
 }
