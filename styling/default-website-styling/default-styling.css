@@ -1,57 +1,102 @@
 /* default-styling.css */
 
-/* Add Custom font */
 @font-face {
     font-family: 'PixeloidSans';
     src: url('/assets/fonts/pixeloid-font/PixeloidSans-mLxMm.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
-/* Define CSS variables */
+@font-face {
+    font-family: 'PixeloidSansBold';
+    src: url('/assets/fonts/pixeloid-font/PixeloidSansBold-PKnYd.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 :root {
-    /* Spacing */
-    --container-padding: auto;
-    --container-margin: auto;
-    --container-max-height: auto;
-    --container-max-width: auto;
-
-    /* Colors */
-    --primary-color: #ffffff; /* Main text color */
-    --secondary-color: #000000; /* Background color */
-    --accent-color: #ff6600; /* Accent color for buttons, links, etc. */
-
-    /* Typography */
-    --font-heading: 'PixeloidSans', sans-serif;
-    --font-body: Arial, sans-serif;
+    --color-bg: #050505;
+    --color-bg-elevated: #0e0e0e;
+    --color-bg-panel: rgba(255, 255, 255, 0.04);
+    --color-border: rgba(255, 255, 255, 0.16);
+    --color-border-strong: rgba(255, 255, 255, 0.35);
+    --color-text: #f6f3eb;
+    --color-text-muted: #beb7a5;
+    --color-accent: #ff7a1a;
+    --color-accent-soft: rgba(255, 122, 26, 0.14);
+    --color-success: #8fe36b;
+    --shadow-panel: 0 18px 40px rgba(0, 0, 0, 0.32);
+    --content-width: 1200px;
+    --page-padding: clamp(1rem, 2vw, 2rem);
+    --section-gap: clamp(1.5rem, 4vw, 3rem);
+    --font-heading: 'PixeloidSansBold', 'PixeloidSans', sans-serif;
+    --font-body: 'PixeloidSans', Arial, sans-serif;
 }
 
-/* Base body styling */
+html {
+    background:
+        radial-gradient(circle at top left, rgba(255, 122, 26, 0.18), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(143, 227, 107, 0.12), transparent 22%),
+        linear-gradient(180deg, #101010 0%, #050505 45%, #030303 100%);
+}
+
 body {
-    /* Container */
-    max-height: var(--container-max-height);
-    max-width: var(--container-max-width);
-
-    margin: var(--container-margin);
-    padding: var(--container-padding);
-
-    background-image: none;
-    background-color: var(--secondary-color);
-}
-
-/* Base Headings Style */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color);
-    font-family: var(--font-heading);
-}
-
-/* Base Text styling */
-ul, li, p, a { 
-    color: var(--primary-color);
+    min-height: 100vh;
+    margin: 0;
+    background: transparent;
+    color: var(--color-text);
     font-family: var(--font-body);
-    line-height: 1.6; 
 }
 
-ul, li {
-    list-style: none;
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    background-size: 24px 24px;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.85), transparent 92%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    letter-spacing: 0.06em;
+    line-height: 1.25;
+}
+
+p,
+li,
+a,
+span,
+strong {
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.7;
+}
+
+a {
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+.screen-reader-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }

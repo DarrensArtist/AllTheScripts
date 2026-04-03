@@ -1,48 +1,170 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>All The Scripts</title>
-        <link rel="stylesheet" href="/../../styling/page-base.css">
-        <link rel="stylesheet" href="styling/page-pagename.css">
+        <title>Scripts | All The Scripts</title>
+        <meta name="description" content="Reusable scripting ideas and implementation direction for All The Scripts.">
+        <base href="/">
+        <link rel="stylesheet" href="/styling/default-website-styling/universal-style-reset.css">
+        <link rel="stylesheet" href="/styling/default-website-styling/default-styling.css">
+        <link rel="stylesheet" href="/styling/default-website-styling/base-page-styling.css">
+        <link rel="stylesheet" href="/styling/default-website-styling/responsive-design.css">
     </head>
 
     <body>
-        <!-- Header -->
-        <header class="header">
-            <a href="/index.html"><img src="/../../assets/art/company-logo-favicon.png" alt="Company Logo"></a>
-        
-            <!-- Navigation -->
-            <nav class="navigation">
-                <ul class="navigation-links">
-                    <li><h3><a href="/../../pages/games.html">Games</a></h3></li>
-                    <li><h3><a href="/../../pages/scripts.html">Scripts</a></h3></li>
-                    <li><h3><a href="/../../pages/templates.html">Templates</a></h3></li>
-                    <li><h3><a href="/../../pages/assets.html">Assets</a></h3></li>
-                    <li><h3><a href="/../../pages/blog.html">Blog</a></h3></li>
-                </ul>
+        <nav class="navigation-top" aria-label="Utility">
+            <ul class="navigation-main">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
+                <li><a href="/pages/content/games.html">Games</a></li>
+                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
+                <li><a href="/pages/content/scripts.html" class="active">Scripts</a></li>
+            </ul>
 
-                <script src="/scripts/navigation.js"></script>
-            </nav>
-        </header>
+            <div class="navigation-meta">
+                <span>Reusable code direction</span>
+                <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+        </nav>
 
-        <!-- Page Title -->
-        <div>
-            <h1 class="page-title">Scripts</h1>
+        <div class="latest-additon-banner">
+            <div class="latest-text-block">
+                <p>Scripts</p>
+            </div>
+            <a href="/pages/content/games.html">
+                <p class="panning-text">The next script releases are meant to support the same prototypes that appear on the games page.</p>
+            </a>
         </div>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <div>
-                <h3 class="page-sub-title">Under Construction</h3>
+        <header class="header">
+            <img class="logo-header" src="/assets/art/logo-header.png" alt="All The Scripts">
+        </header>
+
+        <nav class="navigation-overlay" id="navigation-overlay" aria-label="Mobile">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
+                <li><a href="/pages/content/games.html">Games</a></li>
+                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
+                <li><a href="/pages/content/scripts.html">Scripts</a></li>
+            </ul>
+        </nav>
+
+        <header class="responsive-design-header">
+            <button class="hamburger" id="hamburger-btn" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="responsive-design-logo">
+                <img src="/assets/art/logo-header.png" alt="All The Scripts">
             </div>
+
+            <div class="search-button">
+                <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+        </header>
+
+        <nav class="navigation-bottom" aria-label="Primary">
+            <ul class="navigation-content">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
+                <li><a href="/pages/content/games.html">Games</a></li>
+                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
+                <li><a href="/pages/content/scripts.html" class="active">Scripts</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <section class="page-hero">
+                <span class="section-label">Scripts</span>
+                <h1>A real section now, even before the library is large.</h1>
+                <p>
+                    This page sets the direction for reusable logic and implementation notes. It is intentionally
+                    framed as a working area, not a fake placeholder disguised as a live catalog.
+                </p>
+            </section>
+
+            <section class="resource-grid">
+                <article class="resource-card">
+                    <span class="mini-heading">Gameplay systems</span>
+                    <h3>Mechanic snippets</h3>
+                    <p>Reusable pieces for movement, scoring, spawning, state control, and other small systems.</p>
+                    <ul>
+                        <li>Focused examples instead of giant monoliths</li>
+                        <li>Adaptable to small projects</li>
+                        <li>Explained through real use cases</li>
+                    </ul>
+                </article>
+
+                <article class="resource-card">
+                    <span class="mini-heading">Breakdowns</span>
+                    <h3>Implementation notes</h3>
+                    <p>Short writeups that explain what the code is doing, what assumptions it makes, and where it can break.</p>
+                    <ul>
+                        <li>System responsibilities</li>
+                        <li>Integration notes</li>
+                        <li>Edge cases worth checking</li>
+                    </ul>
+                </article>
+
+                <article class="resource-card">
+                    <span class="mini-heading">Connected work</span>
+                    <h3>Prototype support scripts</h3>
+                    <p>Scripts released here should map back to real experiments like Snake so the examples stay grounded.</p>
+                    <ul>
+                        <li>Prototype-linked releases</li>
+                        <li>Useful before “complete”</li>
+                        <li>Published when ready, not promised early</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="split-layout">
+                <article class="callout-panel">
+                    <span class="section-label">Publishing Standard</span>
+                    <h2>No dead entries in the main library.</h2>
+                    <p>
+                        Script content should appear only when there is enough explanation and context to make it
+                        reusable. That keeps this page honest while still giving the section a clear shape today.
+                    </p>
+                    <div class="panel-actions">
+                        <a class="button-primary" href="/pages/content/games.html">See linked projects</a>
+                        <a class="button-secondary" href="/pages/content/docs-temps.html">See supporting docs</a>
+                    </div>
+                </article>
+
+                <aside class="info-panel">
+                    <span class="mini-heading">Good first additions</span>
+                    <ul class="list-clean">
+                        <li>Score tracking and game state transitions.</li>
+                        <li>Input handling patterns for small arcade projects.</li>
+                        <li>Spawn and progression helpers tied back to prototype examples.</li>
+                    </ul>
+                </aside>
+            </section>
         </main>
 
-        <!-- Footer -->
         <footer class="footer">
-            <h2>Footer</h2>
+            <div class="footer-inner">
+                <div class="footer-copy">
+                    <p>All The Scripts</p>
+                    <p>Reusable code should be published with context, not just dumped into a list.</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="/index.html">Home</a>
+                    <a href="/pages/main/about-us.html">About</a>
+                    <a href="/pages/content/games.html">Games</a>
+                    <a href="/pages/content/docs-temps.html">Documents</a>
+                    <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">Repository</a>
+                </div>
+            </div>
         </footer>
+
+        <script src="/scripts/toggle-menu-visibility.js"></script>
+        <script src="/scripts/hide-reveal-header.js"></script>
     </body>
 </html>

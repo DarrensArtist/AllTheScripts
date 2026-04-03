@@ -3,178 +3,235 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Project:Snake</title>
-        
-        <!-- Base URL for all relative paths -->
+        <title>Project: Snake | All The Scripts</title>
+        <meta name="description" content="Play Project: Snake and inspect the repository behind the prototype.">
         <base href="/">
-
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="styling/page-base.css">
-        <link rel="stylesheet" href="build/ProjectSnake/TemplateData/style.css">
-        <link rel="shortcut icon" href="build/ProjectSnake/TemplateData/favicon.ico">
+        <link rel="stylesheet" href="/styling/default-website-styling/universal-style-reset.css">
+        <link rel="stylesheet" href="/styling/default-website-styling/default-styling.css">
+        <link rel="stylesheet" href="/styling/default-website-styling/base-page-styling.css">
+        <link rel="stylesheet" href="/styling/default-website-styling/responsive-design.css">
+        <link rel="stylesheet" href="/build/ProjectSnake/TemplateData/style.css">
+        <link rel="shortcut icon" href="/build/ProjectSnake/TemplateData/favicon.ico">
     </head>
 
     <body>
-        <!-- Header -->
-        <header class="header">
-            <a href="index.html"><img src="assets/art/company-logo-favicon.png" alt="Company Logo"></a>
-        
-            <!-- Navigation -->
-            <nav class="navigation">
-                <ul class="navigation-links">
-                    <li><h3><a href="pages/games/games.html">Games</a></h3></li>
-                    <li><h3><a href="pages/scripts.html">Scripts</a></h3></li>
-                    <li><h3><a href="pages/templates.html">Templates</a></h3></li>
-                    <li><h3><a href="pages/assets.html">Assets</a></h3></li>
-                    <li><h3><a href="pages/blog.html">Blog</a></h3></li>
-                </ul>
+        <nav class="navigation-top" aria-label="Utility">
+            <ul class="navigation-main">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
+                <li><a href="/pages/content/games.html" class="active">Games</a></li>
+                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
+                <li><a href="/pages/content/scripts.html">Scripts</a></li>
+            </ul>
 
-                <script src="scripts/navigation.js"></script>
-            </nav>
-        </header>
+            <div class="navigation-meta">
+                <span>Featured playable prototype</span>
+                <a href="https://github.com/DarrensArtist/Project-Snake" target="_blank" rel="noreferrer">Project repo</a>
+            </div>
+        </nav>
 
-        <!-- Page Title -->
-        <div>
-            <h1 class="page-title">Project:Snake</h1>
+        <div class="latest-additon-banner">
+            <div class="latest-text-block">
+                <p>Project</p>
+            </div>
+            <a href="/pages/content/games.html">
+                <p class="panning-text">This page now lives inside the same shared site shell as the rest of the public sections.</p>
+            </a>
         </div>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Game Panel -->
-            <div id="unity-container" class="unity-desktop">
-              <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
-              <div id="unity-loading-bar">
-                <div id="unity-logo"></div>
-                <div id="unity-progress-bar-empty">
-                  <div id="unity-progress-bar-full"></div>
-                </div>
-              </div>
-              <div id="unity-warning"> </div>
-              <div id="unity-footer">
-                <div id="unity-webgl-logo"></div>
-                <div id="unity-fullscreen-button"></div>
-                <div id="unity-build-title">ProjectSnake</div>
-              </div>
+        <header class="header">
+            <img class="logo-header" src="/assets/art/logo-header.png" alt="All The Scripts">
+        </header>
+
+        <nav class="navigation-overlay" id="navigation-overlay" aria-label="Mobile">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
+                <li><a href="/pages/content/games.html">Games</a></li>
+                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
+                <li><a href="/pages/content/scripts.html">Scripts</a></li>
+            </ul>
+        </nav>
+
+        <header class="responsive-design-header">
+            <button class="hamburger" id="hamburger-btn" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="responsive-design-logo">
+                <img src="/assets/art/logo-header.png" alt="All The Scripts">
             </div>
 
-            <script>
-              var container = document.querySelector("#unity-container");
-              var canvas = document.querySelector("#unity-canvas");
-              var loadingBar = document.querySelector("#unity-loading-bar");
-              var progressBarFull = document.querySelector("#unity-progress-bar-full");
-              var fullscreenButton = document.querySelector("#unity-fullscreen-button");
-              var warningBanner = document.querySelector("#unity-warning");
-        
-              // Shows a temporary message banner/ribbon for a few seconds, or
-              // a permanent error message on top of the canvas if type=='error'.
-              // If type=='warning', a yellow highlight color is used.
-              // Modify or remove this function to customize the visually presented
-              // way that non-critical warnings and error messages are presented to the
-              // user.
-              function unityShowBanner(msg, type) {
+            <div class="search-button">
+                <a href="https://github.com/DarrensArtist/Project-Snake" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+        </header>
+
+        <nav class="navigation-bottom" aria-label="Primary">
+            <ul class="navigation-content">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
+                <li><a href="/pages/content/games.html" class="active">Games</a></li>
+                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
+                <li><a href="/pages/content/scripts.html">Scripts</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <section class="page-hero">
+                <span class="section-label">Project: Snake</span>
+                <h1>A compact prototype with a playable build and a clear path back to the code.</h1>
+                <p>
+                    This page is the current benchmark for game entries on the site: a short summary, the live build,
+                    and direct links to the repository instead of filler panels or dead embeds.
+                </p>
+                <div class="panel-actions">
+                    <a class="button-primary" href="https://github.com/DarrensArtist/Project-Snake" target="_blank" rel="noreferrer">Open project repo</a>
+                    <a class="button-secondary" href="/pages/content/games.html">Back to games</a>
+                </div>
+            </section>
+
+            <section class="split-layout">
+                <article class="project-panel">
+                    <span class="mini-heading">What this project shows</span>
+                    <h2>Small scope, visible output</h2>
+                    <p>
+                        Snake works well as a featured prototype because the rules are easy to read and the build
+                        gives the site an immediate hands-on example of what “play and build” can mean.
+                    </p>
+                    <ul>
+                        <li>Arcade-friendly scope</li>
+                        <li>Fast to understand</li>
+                        <li>Easy to extend with additional systems</li>
+                    </ul>
+                </article>
+
+                <aside class="info-panel">
+                    <span class="mini-heading">Project links</span>
+                    <ul class="list-clean">
+                        <li><strong>Repository:</strong> DarrensArtist/Project-Snake</li>
+                        <li><strong>Hosted build:</strong> included directly on this page</li>
+                        <li><strong>Related section:</strong> games library and upcoming scripts area</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="unity-shell">
+                <div id="unity-container" class="unity-desktop">
+                    <canvas id="unity-canvas" width="960" height="600" tabindex="-1" aria-label="Project Snake game"></canvas>
+                    <div id="unity-loading-bar">
+                        <div id="unity-logo"></div>
+                        <div id="unity-progress-bar-empty">
+                            <div id="unity-progress-bar-full"></div>
+                        </div>
+                    </div>
+                    <div id="unity-warning"></div>
+                    <div id="unity-footer">
+                        <div id="unity-webgl-logo"></div>
+                        <div id="unity-fullscreen-button"></div>
+                        <div id="unity-build-title">ProjectSnake</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-copy">
+                    <p>All The Scripts</p>
+                    <p>Project pages should be usable, linkable, and worth revisiting.</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="/index.html">Home</a>
+                    <a href="/pages/content/games.html">Games</a>
+                    <a href="/pages/content/docs-temps.html">Documents</a>
+                    <a href="/pages/content/scripts.html">Scripts</a>
+                    <a href="https://github.com/DarrensArtist/Project-Snake" target="_blank" rel="noreferrer">Project repo</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/scripts/toggle-menu-visibility.js"></script>
+        <script src="/scripts/hide-reveal-header.js"></script>
+        <script>
+            const container = document.querySelector('#unity-container');
+            const canvas = document.querySelector('#unity-canvas');
+            const loadingBar = document.querySelector('#unity-loading-bar');
+            const progressBarFull = document.querySelector('#unity-progress-bar-full');
+            const fullscreenButton = document.querySelector('#unity-fullscreen-button');
+            const warningBanner = document.querySelector('#unity-warning');
+
+            function unityShowBanner(message, type) {
                 function updateBannerVisibility() {
-                  warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+                    warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
                 }
-                var div = document.createElement('div');
-                div.innerHTML = msg;
-                warningBanner.appendChild(div);
-                if (type == 'error') div.style = 'background: red; padding: 10px;';
-                else {
-                  if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
-                  setTimeout(function() {
-                    warningBanner.removeChild(div);
-                    updateBannerVisibility();
-                  }, 5000);
+
+                const banner = document.createElement('div');
+                banner.innerHTML = message;
+                warningBanner.appendChild(banner);
+
+                if (type === 'error') {
+                    banner.style = 'background: red; padding: 10px;';
+                } else {
+                    if (type === 'warning') {
+                        banner.style = 'background: yellow; padding: 10px;';
+                    }
+
+                    setTimeout(() => {
+                        warningBanner.removeChild(banner);
+                        updateBannerVisibility();
+                    }, 5000);
                 }
+
                 updateBannerVisibility();
-              }
-        
-              var buildUrl = "/build/ProjectSnake/Build";
-              var loaderUrl = buildUrl + "/ProjectSnake.loader.js";
-              var config = {
-                dataUrl: buildUrl + "/ProjectSnake.data",
-                frameworkUrl: buildUrl + "/ProjectSnake.framework.js",
-                codeUrl: buildUrl + "/ProjectSnake.wasm",
-                streamingAssetsUrl: "StreamingAssets",
-                companyName: "DefaultCompany",
-                productName: "ProjectSnake",
-                productVersion: "1.0",
+            }
+
+            const buildUrl = '/build/ProjectSnake/Build';
+            const loaderUrl = buildUrl + '/ProjectSnake.loader.js';
+            const config = {
+                dataUrl: buildUrl + '/ProjectSnake.data',
+                frameworkUrl: buildUrl + '/ProjectSnake.framework.js',
+                codeUrl: buildUrl + '/ProjectSnake.wasm',
+                streamingAssetsUrl: 'StreamingAssets',
+                companyName: 'DefaultCompany',
+                productName: 'ProjectSnake',
+                productVersion: '1.0',
                 showBanner: unityShowBanner,
-              };
-        
-              // By default, Unity keeps WebGL canvas render target size matched with
-              // the DOM size of the canvas element (scaled by window.devicePixelRatio)
-              // Set this to false if you want to decouple this synchronization from
-              // happening inside the engine, and you would instead like to size up
-              // the canvas DOM size and WebGL render target sizes yourself.
-              // config.matchWebGLToCanvasSize = false;
-        
-              if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-                // Mobile device style: fill the whole browser client area with the game canvas:
-        
-                var meta = document.createElement('meta');
+            };
+
+            if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+                const meta = document.createElement('meta');
                 meta.name = 'viewport';
                 meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
                 document.getElementsByTagName('head')[0].appendChild(meta);
-                container.className = "unity-mobile";
-                canvas.className = "unity-mobile";
-        
-                // To lower canvas resolution on mobile devices to gain some
-                // performance, uncomment the following line:
-                // config.devicePixelRatio = 1;
-        
-        
-              } else {
-                // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        
-                canvas.style.width = "960px";
-                canvas.style.height = "600px";
-              }
-        
-              loadingBar.style.display = "block";
-        
-              var script = document.createElement("script");
-              script.src = loaderUrl;
-              script.onload = () => {
+                container.className = 'unity-mobile';
+                canvas.className = 'unity-mobile';
+            } else {
+                canvas.style.width = '960px';
+                canvas.style.height = '600px';
+            }
+
+            loadingBar.style.display = 'block';
+
+            const script = document.createElement('script');
+            script.src = loaderUrl;
+            script.onload = () => {
                 createUnityInstance(canvas, config, (progress) => {
-                  progressBarFull.style.width = 100 * progress + "%";
-                      }).then((unityInstance) => {
-                        loadingBar.style.display = "none";
-                        fullscreenButton.onclick = () => {
-                          unityInstance.SetFullscreen(1);
-                        };
-                      }).catch((message) => {
-                        alert(message);
-                      });
+                    progressBarFull.style.width = 100 * progress + '%';
+                }).then((unityInstance) => {
+                    loadingBar.style.display = 'none';
+                    fullscreenButton.onclick = () => {
+                        unityInstance.SetFullscreen(1);
                     };
-        
-              document.body.appendChild(script);       
-            </script>
+                }).catch((message) => {
+                    alert(message);
+                });
+            };
 
-            <!-- Github Link -->
-            <div class="git-div">
-                <h1 class="title">Code Base</h1>
-                <button class="git-btn">
-                    <a href="https://github.com/DarrensArtist/Project-Snake">
-                        <img 
-                            src="assets/art/git-banner.png" 
-                            alt="git-banner" 
-                            class="git-banner"
-                        >
-                    </a>
-                </button>
-                <div class="git-panels">
-                    <embed class="git-window" src="" type="html">
-                    <embed class="git-window" src="" type="html">
-                    <embed class="git-window" src="" type="html">
-                    <embed class="git-window" src="" type="html">
-                </div>
-            </div>
-        </main>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <h2>Footer</h2>
-        </footer>
+            document.body.appendChild(script);
+        </script>
     </body>
 </html>

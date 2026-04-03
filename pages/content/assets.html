@@ -1,48 +1,110 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>All The Scripts</title>
-        <link rel="stylesheet" href="/../../styling/page-base.css">
-        <link rel="stylesheet" href="styling/page-pagename.css">
+        <title>Assets | All The Scripts</title>
+        <meta name="description" content="Future asset direction for All The Scripts.">
+        <base href="/">
+        <link rel="stylesheet" href="/styling/default-website-styling/universal-style-reset.css">
+        <link rel="stylesheet" href="/styling/default-website-styling/default-styling.css">
+        <link rel="stylesheet" href="/styling/default-website-styling/base-page-styling.css">
+        <link rel="stylesheet" href="/styling/default-website-styling/responsive-design.css">
     </head>
 
     <body>
-        <!-- Header -->
-        <header class="header">
-            <a href="/index.html"><img src="/../../assets/art/company-logo-favicon.png" alt="Company Logo"></a>
-        
-            <!-- Navigation -->
-            <nav class="navigation">
-                <ul class="navigation-links">
-                    <li><h3><a href="/../../pages/games.html">Games</a></h3></li>
-                    <li><h3><a href="/../../pages/scripts.html">Scripts</a></h3></li>
-                    <li><h3><a href="/../../pages/templates.html">Templates</a></h3></li>
-                    <li><h3><a href="/../../pages/assets.html">Assets</a></h3></li>
-                    <li><h3><a href="/../../pages/blog.html">Blog</a></h3></li>
-                </ul>
+        <nav class="navigation-top" aria-label="Utility">
+            <ul class="navigation-main">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
+                <li><a href="/pages/content/games.html">Games</a></li>
+                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
+                <li><a href="/pages/content/scripts.html">Scripts</a></li>
+            </ul>
 
-                <script src="/scripts/navigation.js"></script>
-            </nav>
-        </header>
+            <div class="navigation-meta">
+                <span>Future section</span>
+                <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+        </nav>
 
-        <!-- Page Title -->
-        <div>
-            <h1 class="page-title">Assets</h1>
+        <div class="latest-additon-banner">
+            <div class="latest-text-block">
+                <p>Future</p>
+            </div>
+            <a href="/pages/content/games.html">
+                <p class="panning-text">This section is intentionally off the main navigation until there is real asset content to publish.</p>
+            </a>
         </div>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <div>
-                <h3 class="page-sub-title">Under Construction</h3>
+        <header class="header">
+            <img class="logo-header" src="/assets/art/logo-header.png" alt="All The Scripts">
+        </header>
+
+        <nav class="navigation-overlay" id="navigation-overlay" aria-label="Mobile">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
+                <li><a href="/pages/content/games.html">Games</a></li>
+                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
+                <li><a href="/pages/content/scripts.html">Scripts</a></li>
+            </ul>
+        </nav>
+
+        <header class="responsive-design-header">
+            <button class="hamburger" id="hamburger-btn" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="responsive-design-logo">
+                <img src="/assets/art/logo-header.png" alt="All The Scripts">
             </div>
+
+            <div class="search-button">
+                <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+        </header>
+
+        <nav class="navigation-bottom" aria-label="Primary">
+            <ul class="navigation-content">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
+                <li><a href="/pages/content/games.html">Games</a></li>
+                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
+                <li><a href="/pages/content/scripts.html">Scripts</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <section class="page-hero">
+                <span class="section-label">Assets</span>
+                <h1>This section is being held back until it has real material.</h1>
+                <p>
+                    Assets are not currently linked from the public navigation because the site now avoids advertising
+                    unfinished categories. When this section goes live, it should contain real downloadable or previewable content.
+                </p>
+            </section>
         </main>
 
-        <!-- Footer -->
         <footer class="footer">
-            <h2>Footer</h2>
+            <div class="footer-inner">
+                <div class="footer-copy">
+                    <p>All The Scripts</p>
+                    <p>Hidden from the main nav until the content is ready.</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="/index.html">Home</a>
+                    <a href="/pages/content/games.html">Games</a>
+                    <a href="/pages/content/docs-temps.html">Documents</a>
+                    <a href="/pages/content/scripts.html">Scripts</a>
+                </div>
+            </div>
         </footer>
+
+        <script src="/scripts/toggle-menu-visibility.js"></script>
+        <script src="/scripts/hide-reveal-header.js"></script>
     </body>
 </html>
