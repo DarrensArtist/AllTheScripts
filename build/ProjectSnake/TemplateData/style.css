@@ -1,16 +1,175 @@
-body { padding: 0; margin: 0 }
-#unity-container { position: absolute }
-#unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
-#unity-container.unity-mobile { position: fixed; width: 100%; height: 100% }
-#unity-canvas { background: #231F20 }
-.unity-mobile #unity-canvas { width: 100%; height: 100% }
-#unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
-#unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
-#unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('progress-bar-empty-dark.png') no-repeat center }
-#unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
-#unity-footer { position: relative }
-.unity-mobile #unity-footer { display: none }
-#unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
-#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
-#unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
-#unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.play-state-shell {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.play-state-copy {
+    display: grid;
+    gap: 0.65rem;
+    max-width: 64ch;
+}
+
+.unity-experience {
+    display: grid;
+    gap: 1rem;
+}
+
+.unity-stage,
+.unity-mobile-placeholder {
+    width: 100%;
+}
+
+.unity-embed-shell {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding: clamp(0.75rem, 1.6vw, 1rem);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02));
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.32);
+}
+
+#unity-container {
+    position: relative;
+}
+
+#unity-canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    background: #050505;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 10px;
+}
+
+#unity-loading-bar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 2;
+}
+
+#unity-logo {
+    width: 154px;
+    height: 130px;
+    background: url('unity-logo-dark.png') no-repeat center;
+}
+
+#unity-progress-bar-empty {
+    width: 141px;
+    height: 18px;
+    margin-top: 10px;
+    margin-left: 6.5px;
+    background: url('progress-bar-empty-dark.png') no-repeat center;
+}
+
+#unity-progress-bar-full {
+    width: 0%;
+    height: 18px;
+    margin-top: 10px;
+    background: url('progress-bar-full-dark.png') no-repeat center;
+}
+
+#unity-warning {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    max-width: min(90%, 520px);
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+    z-index: 3;
+}
+
+#unity-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 0.85rem;
+}
+
+#unity-webgl-logo {
+    flex-shrink: 0;
+    width: 204px;
+    height: 38px;
+    background: url('webgl-logo.png') no-repeat center;
+}
+
+#unity-build-title {
+    margin-left: auto;
+    line-height: 38px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #f5f5f5;
+}
+
+#unity-fullscreen-button {
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    background: url('fullscreen-button.png') no-repeat center;
+}
+
+.unity-mobile-placeholder {
+    display: grid;
+    place-items: center;
+    min-height: min(72vw, 540px);
+    padding: clamp(1rem, 4vw, 2rem);
+    border: 1px dashed rgba(255, 255, 255, 0.34);
+    border-radius: 12px;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02));
+}
+
+.unity-mobile-copy {
+    display: grid;
+    gap: 1rem;
+    max-width: 42rem;
+}
+
+.unity-mobile-copy .section-label {
+    margin-bottom: 0;
+}
+
+@media (max-width: 980px) {
+    .play-state-shell {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+}
+
+@media (max-width: 680px) {
+    #unity-footer {
+        flex-wrap: wrap;
+    }
+
+    #unity-webgl-logo {
+        width: 160px;
+        background-size: contain;
+    }
+
+    #unity-build-title {
+        width: 100%;
+        margin-left: 0;
+        line-height: 1.4;
+    }
+}
