@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Scripts | All The Scripts</title>
-        <meta name="description" content="Reusable scripting ideas and implementation direction for All The Scripts.">
+        <meta name="description" content="Reusable Unity implementation notes that support the projects on All The Scripts.">
         <base href="/">
         <link rel="stylesheet" href="/styling/default-website-styling/universal-style-reset.css">
         <link rel="stylesheet" href="/styling/default-website-styling/default-styling.css">
@@ -16,24 +16,23 @@
         <nav class="navigation-top" aria-label="Utility">
             <ul class="navigation-main">
                 <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/content/projects.html">Projects</a></li>
+                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
                 <li><a href="/pages/main/about-us.html">About</a></li>
-                <li><a href="/pages/content/games.html">Games</a></li>
-                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
-                <li><a href="/pages/content/scripts.html" class="active">Scripts</a></li>
             </ul>
 
             <div class="navigation-meta">
-                <span>Reusable code direction</span>
+                <span>Reusable implementation notes</span>
                 <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">GitHub</a>
             </div>
         </nav>
 
         <div class="latest-additon-banner">
             <div class="latest-text-block">
-                <p>Scripts</p>
+                <p>Support</p>
             </div>
-            <a href="/pages/content/games.html">
-                <p class="panning-text">The next script releases are meant to support the same prototypes that appear on the games page.</p>
+            <a href="/pages/content/projects.html">
+                <p class="panning-text">Reusable script notes should support the live project lessons instead of acting as disconnected placeholders.</p>
             </a>
         </div>
 
@@ -44,10 +43,9 @@
         <nav class="navigation-overlay" id="navigation-overlay" aria-label="Mobile">
             <ul>
                 <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/content/projects.html">Projects</a></li>
+                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
                 <li><a href="/pages/main/about-us.html">About</a></li>
-                <li><a href="/pages/content/games.html">Games</a></li>
-                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
-                <li><a href="/pages/content/scripts.html">Scripts</a></li>
             </ul>
         </nav>
 
@@ -63,87 +61,41 @@
             </div>
 
             <div class="search-button">
-                <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">Repo</a>
+                <a href="/pages/content/projects.html">Projects</a>
             </div>
         </header>
 
         <nav class="navigation-bottom" aria-label="Primary">
             <ul class="navigation-content">
                 <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/content/projects.html">Projects</a></li>
+                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
                 <li><a href="/pages/main/about-us.html">About</a></li>
-                <li><a href="/pages/content/games.html">Games</a></li>
-                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
-                <li><a href="/pages/content/scripts.html" class="active">Scripts</a></li>
             </ul>
         </nav>
 
         <main class="main-content">
             <section class="page-hero">
                 <span class="section-label">Scripts</span>
-                <h1>A real section now, even before the library is large.</h1>
-                <p>
-                    This page sets the direction for reusable logic and implementation notes. It is intentionally
-                    framed as a working area, not a fake placeholder disguised as a live catalog.
+                <h1>Reusable notes that come after the lesson pages are clear.</h1>
+                <p class="lede">
+                    This section is for smaller implementation references that point back to a live project page and help explain specific systems.
                 </p>
             </section>
 
-            <section class="resource-grid">
+            <section class="support-grid">
                 <article class="resource-card">
-                    <span class="mini-heading">Gameplay systems</span>
-                    <h3>Mechanic snippets</h3>
-                    <p>Reusable pieces for movement, scoring, spawning, state control, and other small systems.</p>
-                    <ul>
-                        <li>Focused examples instead of giant monoliths</li>
-                        <li>Adaptable to small projects</li>
-                        <li>Explained through real use cases</li>
-                    </ul>
+                    <h3>Input handling notes</h3>
+                    <p>Small references for keyboard movement, menu controls, and clean scene-to-scene interactions.</p>
                 </article>
-
                 <article class="resource-card">
-                    <span class="mini-heading">Breakdowns</span>
-                    <h3>Implementation notes</h3>
-                    <p>Short writeups that explain what the code is doing, what assumptions it makes, and where it can break.</p>
-                    <ul>
-                        <li>System responsibilities</li>
-                        <li>Integration notes</li>
-                        <li>Edge cases worth checking</li>
-                    </ul>
+                    <h3>State and scoring patterns</h3>
+                    <p>Reusable patterns for round resets, win conditions, score tracking, and simple game state flow.</p>
                 </article>
-
                 <article class="resource-card">
-                    <span class="mini-heading">Connected work</span>
-                    <h3>Prototype support scripts</h3>
-                    <p>Scripts released here should map back to real experiments like Snake so the examples stay grounded.</p>
-                    <ul>
-                        <li>Prototype-linked releases</li>
-                        <li>Useful before “complete”</li>
-                        <li>Published when ready, not promised early</li>
-                    </ul>
+                    <h3>Follow-up scripts</h3>
+                    <p>Any reusable code note should link back to the project that proved out the pattern in practice.</p>
                 </article>
-            </section>
-
-            <section class="split-layout">
-                <article class="callout-panel">
-                    <span class="section-label">Publishing Standard</span>
-                    <h2>No dead entries in the main library.</h2>
-                    <p>
-                        Script content should appear only when there is enough explanation and context to make it
-                        reusable. That keeps this page honest while still giving the section a clear shape today.
-                    </p>
-                    <div class="panel-actions">
-                        <a class="button-primary" href="/pages/content/games.html">See linked projects</a>
-                        <a class="button-secondary" href="/pages/content/docs-temps.html">See supporting docs</a>
-                    </div>
-                </article>
-
-                <aside class="info-panel">
-                    <span class="mini-heading">Good first additions</span>
-                    <ul class="list-clean">
-                        <li>Score tracking and game state transitions.</li>
-                        <li>Input handling patterns for small arcade projects.</li>
-                        <li>Spawn and progression helpers tied back to prototype examples.</li>
-                    </ul>
-                </aside>
             </section>
         </main>
 
@@ -151,15 +103,13 @@
             <div class="footer-inner">
                 <div class="footer-copy">
                     <p>All The Scripts</p>
-                    <p>Reusable code should be published with context, not just dumped into a list.</p>
+                    <p>Reusable script notes stay tied to real projects.</p>
                 </div>
 
                 <div class="footer-links">
-                    <a href="/index.html">Home</a>
+                    <a href="/pages/content/projects.html">Projects</a>
+                    <a href="/pages/content/roadmap.html">Roadmap</a>
                     <a href="/pages/main/about-us.html">About</a>
-                    <a href="/pages/content/games.html">Games</a>
-                    <a href="/pages/content/docs-temps.html">Documents</a>
-                    <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">Repository</a>
                 </div>
             </div>
         </footer>

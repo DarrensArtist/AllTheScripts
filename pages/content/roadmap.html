@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About | All The Scripts</title>
-        <meta name="description" content="About the Unity project-learning portfolio behind All The Scripts.">
+        <title>Roadmap | All The Scripts</title>
+        <meta name="description" content="Future Unity projects and writing plans for All The Scripts.">
         <base href="/">
         <link rel="stylesheet" href="/styling/default-website-styling/universal-style-reset.css">
         <link rel="stylesheet" href="/styling/default-website-styling/default-styling.css">
@@ -17,22 +17,22 @@
             <ul class="navigation-main">
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/pages/content/projects.html">Projects</a></li>
-                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
-                <li><a href="/pages/main/about-us.html" class="active">About</a></li>
+                <li><a href="/pages/content/roadmap.html" class="active">Roadmap</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
             </ul>
 
             <div class="navigation-meta">
-                <span>From deployment test to teaching portfolio</span>
+                <span>Future work lives here, not in the main nav</span>
                 <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">GitHub</a>
             </div>
         </nav>
 
         <div class="latest-additon-banner">
             <div class="latest-text-block">
-                <p>About</p>
+                <p>Roadmap</p>
             </div>
             <a href="/pages/content/projects.html">
-                <p class="panning-text">The site is now built around small Unity lessons instead of placeholder categories.</p>
+                <p class="panning-text">Projects graduate from here into the public library when they have a real lesson page and honest status.</p>
             </a>
         </div>
 
@@ -69,74 +69,73 @@
             <ul class="navigation-content">
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/pages/content/projects.html">Projects</a></li>
-                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
-                <li><a href="/pages/main/about-us.html" class="active">About</a></li>
+                <li><a href="/pages/content/roadmap.html" class="active">Roadmap</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
             </ul>
         </nav>
 
         <main class="main-content">
             <section class="page-hero">
-                <span class="section-label">About All The Scripts</span>
-                <h1>A portfolio built around teaching through small Unity projects.</h1>
+                <span class="section-label">Roadmap</span>
+                <h1>Future ideas stay visible here until they earn a proper project page.</h1>
                 <p class="lede">
-                    This started as a place to test whether a barebones Unity game could run on a live website.
-                    The new goal is more useful: ship short playable projects, document the process honestly, and
-                    turn each one into a lesson another developer can follow.
+                    This page keeps the public site honest. It shows what is coming without making unfinished ideas feel shipped.
                 </p>
             </section>
 
-            <section class="page-grid">
-                <article class="page-panel">
-                    <h3>What the site is for</h3>
-                    <p>This is not just a gallery of finished work. It is a project-learning portfolio.</p>
-                    <ul>
-                        <li>Show that a mechanic or workflow can be built and shipped</li>
-                        <li>Explain the process clearly enough for someone else to repeat it</li>
-                        <li>Use simple Unity projects as approachable learning steps</li>
+            <section class="roadmap-grid">
+                <article class="page-panel roadmap-column">
+                    <span class="status-badge live">Published</span>
+                    <h2>Already public</h2>
+                    <ul class="roadmap-list">
+                        <li><strong>Snake:</strong> live project page with working WebGL deployment and process notes.</li>
                     </ul>
                 </article>
 
-                <article class="page-panel">
-                    <h3>Who it is for</h3>
-                    <p>The audience is people who learn best by rebuilding something small and understandable.</p>
-                    <ul>
-                        <li>Beginner Unity users</li>
-                        <li>Game-dev hobbyists looking for practical examples</li>
-                        <li>Developers who prefer project-based learning over abstract theory</li>
+                <article class="page-panel roadmap-column">
+                    <span class="status-badge writing">Writing</span>
+                    <h2>Page structure ready</h2>
+                    <ul class="roadmap-list">
+                        <li><strong>Pong:</strong> finalise the playable build and capture screenshots or video.</li>
+                        <li><strong>Top-Down Movement:</strong> build the demo scene and document the controller logic.</li>
                     </ul>
                 </article>
 
-                <article class="page-panel">
-                    <h3>How projects are judged</h3>
-                    <p>A project belongs on the site when it teaches something real, not only when it looks polished.</p>
-                    <ul>
-                        <li>Can the visitor understand what they will learn?</li>
-                        <li>Is the current status honest?</li>
-                        <li>Does the page explain enough to be useful?</li>
+                <article class="page-panel roadmap-column">
+                    <span class="status-badge prototype">Prototype</span>
+                    <h2>Build next</h2>
+                    <ul class="roadmap-list">
+                        <li><strong>Breakout:</strong> collision tuning, brick setup, score flow, and restart loop.</li>
+                        <li><strong>Menu/UI lesson:</strong> basic title screen, pause flow, and scene navigation in Unity.</li>
+                    </ul>
+                </article>
+
+                <article class="page-panel roadmap-column">
+                    <span class="status-badge idea">Idea</span>
+                    <h2>Longer-term topics</h2>
+                    <ul class="roadmap-list">
+                        <li><strong>Reusable scripts:</strong> publish smaller mechanic notes linked to live projects.</li>
+                        <li><strong>Planning packs:</strong> templates tied to each project so teaching and production stay connected.</li>
                     </ul>
                 </article>
             </section>
 
             <section class="split-layout">
                 <article class="callout-panel">
-                    <span class="section-label">What changed</span>
-                    <h2>The site now favors clarity over pretending everything is finished.</h2>
+                    <span class="section-label">Publishing rule</span>
+                    <h2>A project moves into the main library only when the page can teach something real.</h2>
                     <p>
-                        Unfinished ideas have moved into a roadmap page. Public navigation is reserved for the parts
-                        of the site that already have a clear teaching purpose and usable content.
+                        That means a clear summary, honest status, useful breakdown, and enough direction for someone else
+                        to recreate or learn from it. The roadmap exists so unfinished work can stay visible without lowering quality.
                     </p>
-                    <div class="panel-actions">
-                        <a class="button-primary" href="/pages/content/projects.html">Browse projects</a>
-                        <a class="button-secondary" href="/pages/content/roadmap.html">See roadmap</a>
-                    </div>
                 </article>
 
                 <aside class="info-panel">
-                    <span class="mini-heading">First wave focus</span>
+                    <span class="mini-heading">What to prioritise</span>
                     <ul class="list-clean">
-                        <li>Unity WebGL deployment basics</li>
-                        <li>Arcade-scale mechanic lessons</li>
-                        <li>Short project pages with repeatable structure</li>
+                        <li>Finish one complete Pong lesson page with build and walkthrough.</li>
+                        <li>Add screenshots or captures to non-playable project pages once prototypes exist.</li>
+                        <li>Tie scripts and templates back to the specific projects they support.</li>
                     </ul>
                 </aside>
             </section>
@@ -146,12 +145,12 @@
             <div class="footer-inner">
                 <div class="footer-copy">
                     <p>All The Scripts</p>
-                    <p>Built to turn small Unity projects into clear learning material.</p>
+                    <p>Roadmap items are visible, but only complete lesson pages stay in the main flow.</p>
                 </div>
 
                 <div class="footer-links">
                     <a href="/pages/content/projects.html">Projects</a>
-                    <a href="/pages/content/roadmap.html">Roadmap</a>
+                    <a href="/pages/main/about-us.html">About</a>
                     <a href="/index.html">Home</a>
                     <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">Repository</a>
                 </div>

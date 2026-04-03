@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Breakout | All The Scripts</title>
+        <meta name="description" content="Planned Breakout lesson page for All The Scripts.">
+        <base href="/">
+        <link rel="stylesheet" href="/styling/default-website-styling/universal-style-reset.css">
+        <link rel="stylesheet" href="/styling/default-website-styling/default-styling.css">
+        <link rel="stylesheet" href="/styling/default-website-styling/base-page-styling.css">
+        <link rel="stylesheet" href="/styling/default-website-styling/responsive-design.css">
+    </head>
+    <body>
+        <nav class="navigation-top" aria-label="Utility">
+            <ul class="navigation-main">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/content/projects.html" class="active">Projects</a></li>
+                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
+            </ul>
+            <div class="navigation-meta">
+                <span>Arcade iteration lesson</span>
+                <a href="/pages/content/projects.html">Projects</a>
+            </div>
+        </nav>
+        <div class="latest-additon-banner">
+            <div class="latest-text-block"><p>Prototype</p></div>
+            <a href="/pages/content/roadmap.html"><p class="panning-text">Breakout is planned as the next step after Pong for teaching collision tuning and replay loops.</p></a>
+        </div>
+        <header class="header">
+            <img class="logo-header" src="/assets/art/logo-header.png" alt="All The Scripts">
+        </header>
+        <nav class="navigation-overlay" id="navigation-overlay" aria-label="Mobile">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/content/projects.html">Projects</a></li>
+                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
+            </ul>
+        </nav>
+        <header class="responsive-design-header">
+            <button class="hamburger" id="hamburger-btn" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            <div class="responsive-design-logo"><img src="/assets/art/logo-header.png" alt="All The Scripts"></div>
+            <div class="search-button"><a href="/pages/content/projects.html">Projects</a></div>
+        </header>
+        <nav class="navigation-bottom" aria-label="Primary">
+            <ul class="navigation-content">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/content/projects.html" class="active">Projects</a></li>
+                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <section class="page-hero">
+                <span class="section-label">Breakout</span>
+                <h1>A future lesson for collision tuning, level setup, and repeatable arcade loops.</h1>
+                <p class="lede">Breakout should teach how to move from one-screen arcade logic into something that needs deliberate balancing and layout.</p>
+                <div class="meta-strip">
+                    <span class="status-badge prototype">Planned build</span>
+                    <span class="meta-pill">Collision tuning</span>
+                    <span class="meta-pill">Replay loop</span>
+                </div>
+            </section>
+            <section class="detail-grid">
+                <article class="page-panel">
+                    <span class="section-label">Overview</span>
+                    <ul>
+                        <li>Use a paddle, ball, and brick grid to teach controlled iteration</li>
+                        <li>Keep the project readable while introducing more moving parts than Pong</li>
+                        <li>Show how tuning affects feel and pacing</li>
+                    </ul>
+                </article>
+                <article class="page-panel">
+                    <span class="section-label">What You'll Learn</span>
+                    <ul>
+                        <li>Level setup with repeated objects</li>
+                        <li>Ball bounce behaviour under pressure</li>
+                        <li>Progression, failure state, and restart flow</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="page-panel">
+                <span class="section-label">Play It</span>
+                <div class="play-state">
+                    <strong>No live build yet.</strong>
+                    <p class="subtle-note">This page stays in prototype status until the project is built and the collision behaviour is solid enough to teach with confidence.</p>
+                </div>
+            </section>
+            <section class="detail-grid">
+                <article class="page-panel">
+                    <span class="section-label">How It Was Built</span>
+                    <ul class="step-list">
+                        <li>Create the paddle and ball foundation from the Pong lesson.</li>
+                        <li>Add brick layout logic and destruction feedback.</li>
+                        <li>Tune bounce angles and failure states.</li>
+                        <li>Track score and completion pacing cleanly.</li>
+                    </ul>
+                </article>
+                <article class="page-panel">
+                    <span class="section-label">Key Systems</span>
+                    <ul>
+                        <li>Brick grid setup</li>
+                        <li>Bounce tuning and paddle control</li>
+                        <li>Score, win state, and restart flow</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="detail-grid">
+                <article class="page-panel">
+                    <span class="section-label">Build Notes / Mistakes</span>
+                    <ul>
+                        <li>This lesson should not become content-heavy before the core bounce feel is right.</li>
+                        <li>The tutorial needs to explain tuning decisions, not only object setup.</li>
+                        <li>Difficulty should scale through layout, not hidden complexity.</li>
+                    </ul>
+                </article>
+                <article class="page-panel">
+                    <span class="section-label">Next Steps</span>
+                    <ul>
+                        <li>Prototype the gameplay loop after Pong is complete.</li>
+                        <li>Capture how collision tuning changes the feel of the game.</li>
+                        <li>Promote it to a full lesson page once the build is stable.</li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-copy"><p>All The Scripts</p><p>Breakout is planned as the next arcade lesson once Pong is fully shipped.</p></div>
+                <div class="footer-links">
+                    <a href="/pages/content/projects.html">Projects</a>
+                    <a href="/pages/content/roadmap.html">Roadmap</a>
+                    <a href="/index.html">Home</a>
+                </div>
+            </div>
+        </footer>
+        <script src="/scripts/toggle-menu-visibility.js"></script>
+        <script src="/scripts/hide-reveal-header.js"></script>
+    </body>
+</html>

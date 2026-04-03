@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects | All The Scripts</title>
+        <meta name="description" content="Unity project lessons, playable demos, and process breakdowns from All The Scripts.">
+        <base href="/">
+        <link rel="stylesheet" href="/styling/default-website-styling/universal-style-reset.css">
+        <link rel="stylesheet" href="/styling/default-website-styling/default-styling.css">
+        <link rel="stylesheet" href="/styling/default-website-styling/base-page-styling.css">
+        <link rel="stylesheet" href="/styling/default-website-styling/responsive-design.css">
+    </head>
+
+    <body>
+        <nav class="navigation-top" aria-label="Utility">
+            <ul class="navigation-main">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/content/projects.html" class="active">Projects</a></li>
+                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
+            </ul>
+
+            <div class="navigation-meta">
+                <span>Every project is a lesson page</span>
+                <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+        </nav>
+
+        <div class="latest-additon-banner">
+            <div class="latest-text-block">
+                <p>Projects</p>
+            </div>
+            <a href="/pages/content/roadmap.html">
+                <p class="panning-text">Only real project pages stay in the public flow. Future work is tracked separately on the roadmap.</p>
+            </a>
+        </div>
+
+        <header class="header">
+            <img class="logo-header" src="/assets/art/logo-header.png" alt="All The Scripts">
+        </header>
+
+        <nav class="navigation-overlay" id="navigation-overlay" aria-label="Mobile">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/content/projects.html">Projects</a></li>
+                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
+            </ul>
+        </nav>
+
+        <header class="responsive-design-header">
+            <button class="hamburger" id="hamburger-btn" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="responsive-design-logo">
+                <img src="/assets/art/logo-header.png" alt="All The Scripts">
+            </div>
+
+            <div class="search-button">
+                <a href="/pages/content/roadmap.html">Roadmap</a>
+            </div>
+        </header>
+
+        <nav class="navigation-bottom" aria-label="Primary">
+            <ul class="navigation-content">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/content/projects.html" class="active">Projects</a></li>
+                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
+                <li><a href="/pages/main/about-us.html">About</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <section class="page-hero">
+                <span class="section-label">Project Library</span>
+                <h1>Small Unity projects with playable demos and reproducible process notes.</h1>
+                <p class="lede">
+                    Every page here follows the same structure: what the project is, what you will learn, what state it is in,
+                    how it was built, what went wrong, and where it should go next.
+                </p>
+            </section>
+
+            <section class="project-grid">
+                <article class="project-panel">
+                    <div class="project-card-head">
+                        <div>
+                            <span class="mini-heading">Origin project</span>
+                            <h2>Snake</h2>
+                        </div>
+                        <span class="status-badge live">Playable</span>
+                    </div>
+                    <p>The first real project page. Honest about its origin as a deployment test, but already useful as a WebGL lesson.</p>
+                    <div class="meta-strip">
+                        <span class="meta-pill">Unity WebGL</span>
+                        <span class="meta-pill">Deployment basics</span>
+                    </div>
+                    <ul>
+                        <li>Explains what currently works in the test build</li>
+                        <li>Documents what still needs to become a complete lesson</li>
+                        <li>Links directly to the source project</li>
+                    </ul>
+                    <div class="panel-actions">
+                        <a class="button-primary" href="/pages/games/sub-pages/snake.html">Open page</a>
+                    </div>
+                </article>
+
+                <article class="project-panel">
+                    <div class="project-card-head">
+                        <div>
+                            <span class="mini-heading">Arcade lesson</span>
+                            <h2>Pong</h2>
+                        </div>
+                        <span class="status-badge writing">Non-playable</span>
+                    </div>
+                    <p>A planned first full tutorial around paddles, ball physics, scoring, reset flow, and polish boundaries.</p>
+                    <div class="meta-strip">
+                        <span class="meta-pill">Collisions</span>
+                        <span class="meta-pill">Scoring loop</span>
+                    </div>
+                    <ul>
+                        <li>Teaches simple but complete project structure</li>
+                        <li>Good first full build-from-scratch lesson</li>
+                        <li>Page is ready before the live build is shipped</li>
+                    </ul>
+                    <div class="panel-actions">
+                        <a class="button-ghost" href="/pages/games/sub-pages/pong.html">Open page</a>
+                    </div>
+                </article>
+
+                <article class="project-panel">
+                    <div class="project-card-head">
+                        <div>
+                            <span class="mini-heading">Controller lesson</span>
+                            <h2>Top-Down Movement</h2>
+                        </div>
+                        <span class="status-badge writing">Non-playable</span>
+                    </div>
+                    <p>A reusable movement foundation for small 2D prototypes, focused on feel, input, and camera follow.</p>
+                    <div class="meta-strip">
+                        <span class="meta-pill">Character control</span>
+                        <span class="meta-pill">Camera follow</span>
+                    </div>
+                    <ul>
+                        <li>Useful for later action or adventure projects</li>
+                        <li>Keeps scope small enough to teach clearly</li>
+                        <li>Sets up patterns worth reusing</li>
+                    </ul>
+                    <div class="panel-actions">
+                        <a class="button-ghost" href="/pages/games/sub-pages/top-down-movement.html">Open page</a>
+                    </div>
+                </article>
+
+                <article class="project-panel">
+                    <div class="project-card-head">
+                        <div>
+                            <span class="mini-heading">Arcade follow-up</span>
+                            <h2>Breakout</h2>
+                        </div>
+                        <span class="status-badge prototype">Planned build</span>
+                    </div>
+                    <p>A stronger lesson for collision layers, level setup, and balancing simple replay loops.</p>
+                    <div class="meta-strip">
+                        <span class="meta-pill">Level layout</span>
+                        <span class="meta-pill">Bounce logic</span>
+                    </div>
+                    <ul>
+                        <li>Natural next step after Pong</li>
+                        <li>Lets the site teach iteration and tuning</li>
+                        <li>Project page structure is already defined</li>
+                    </ul>
+                    <div class="panel-actions">
+                        <a class="button-ghost" href="/pages/games/sub-pages/breakout.html">Open page</a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="detail-grid">
+                <article class="page-panel">
+                    <span class="section-label">Project Page Template</span>
+                    <h3>Every public project should include:</h3>
+                    <ul>
+                        <li>Overview and current project status</li>
+                        <li>What the visitor will learn</li>
+                        <li>Playable build or explicit non-playable state</li>
+                        <li>How it was built and key systems</li>
+                        <li>Build notes, mistakes, next steps, and links</li>
+                    </ul>
+                </article>
+
+                <article class="page-panel">
+                    <span class="section-label">Support Material</span>
+                    <h3>Extra reference pages still exist, but projects come first.</h3>
+                    <ul>
+                        <li><a href="/pages/content/docs-temps.html">Documents & Templates</a> for project planning support</li>
+                        <li><a href="/pages/content/scripts.html">Scripts</a> for reusable implementation notes</li>
+                        <li><a href="/pages/content/roadmap.html">Roadmap</a> for future work that is not ready for the main flow</li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-copy">
+                    <p>All The Scripts</p>
+                    <p>Project pages are the real product. Everything else should support them.</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="/index.html">Home</a>
+                    <a href="/pages/content/roadmap.html">Roadmap</a>
+                    <a href="/pages/main/about-us.html">About</a>
+                    <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">Repository</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/scripts/toggle-menu-visibility.js"></script>
+        <script src="/scripts/hide-reveal-header.js"></script>
+    </body>
+</html>

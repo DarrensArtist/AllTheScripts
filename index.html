@@ -6,7 +6,7 @@
         <title>All The Scripts</title>
         <meta
             name="description"
-            content="Retro-styled game development resources, playable experiments, and practical templates from All The Scripts."
+            content="Play small Unity projects, study how they were made, and use the process notes to build your own."
         >
         <base href="/">
         <link rel="stylesheet" href="/styling/default-website-styling/universal-style-reset.css">
@@ -19,24 +19,23 @@
         <nav class="navigation-top" aria-label="Utility">
             <ul class="navigation-main">
                 <li><a href="/index.html" class="active">Home</a></li>
+                <li><a href="/pages/content/projects.html">Projects</a></li>
+                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
                 <li><a href="/pages/main/about-us.html">About</a></li>
-                <li><a href="/pages/content/games.html">Games</a></li>
-                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
-                <li><a href="/pages/content/scripts.html">Scripts</a></li>
             </ul>
 
             <div class="navigation-meta">
-                <span>Custom domain: allthescripts.uk</span>
+                <span>Unity-first project-learning portfolio</span>
                 <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">GitHub</a>
             </div>
         </nav>
 
         <div class="latest-additon-banner">
             <div class="latest-text-block">
-                <p>Featured</p>
+                <p>Live now</p>
             </div>
             <a href="/pages/games/sub-pages/snake.html">
-                <p class="panning-text">Play Project: Snake and inspect the build pipeline behind the prototype.</p>
+                <p class="panning-text">Play the Snake deployment test, then read the breakdown of what worked and what still needs building.</p>
             </a>
         </div>
 
@@ -47,10 +46,9 @@
         <nav class="navigation-overlay" id="navigation-overlay" aria-label="Mobile">
             <ul>
                 <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/content/projects.html">Projects</a></li>
+                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
                 <li><a href="/pages/main/about-us.html">About</a></li>
-                <li><a href="/pages/content/games.html">Games</a></li>
-                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
-                <li><a href="/pages/content/scripts.html">Scripts</a></li>
             </ul>
         </nav>
 
@@ -66,128 +64,152 @@
             </div>
 
             <div class="search-button">
-                <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">Repo</a>
+                <a href="/pages/content/projects.html">Projects</a>
             </div>
         </header>
 
         <nav class="navigation-bottom" aria-label="Primary">
             <ul class="navigation-content">
                 <li><a href="/index.html" class="active">Home</a></li>
+                <li><a href="/pages/content/projects.html">Projects</a></li>
+                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
                 <li><a href="/pages/main/about-us.html">About</a></li>
-                <li><a href="/pages/content/games.html">Games</a></li>
-                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
-                <li><a href="/pages/content/scripts.html">Scripts</a></li>
             </ul>
         </nav>
 
         <main class="main-content">
             <section class="hero-grid">
                 <div class="hero-copy">
-                    <span class="section-label">Build Practical Things</span>
-                    <h1>Retro game-dev resources with a working project at the center.</h1>
-                    <p>
-                        All The Scripts is a small library of playable prototypes, reusable development notes,
-                        and planning documents for people building games without a giant studio pipeline.
+                    <span class="section-label">Unity Project Lessons</span>
+                    <h1>Play a small Unity project, then learn how to build the same thing.</h1>
+                    <p class="lede">
+                        This site is a teaching portfolio built around simple playable projects. Each project is meant
+                        to prove a mechanic, show the process behind it, and give other developers a practical route to recreate it.
                     </p>
                     <div class="hero-actions">
-                        <a class="button-primary" href="/pages/games/sub-pages/snake.html">Play Project: Snake</a>
-                        <a class="button-secondary" href="/pages/content/docs-temps.html">Browse Templates</a>
+                        <a class="button-primary" href="/pages/content/projects.html">Browse projects</a>
+                        <a class="button-secondary" href="/pages/games/sub-pages/snake.html">Open Snake</a>
                     </div>
                 </div>
 
                 <aside class="hero-panel">
-                    <span class="eyebrow">Current Focus</span>
-                    <h2>What is live right now</h2>
-                    <div class="stats-grid">
-                        <div>
-                            <span class="stat-value">01</span>
-                            <p>Playable game prototype integrated into the site.</p>
-                        </div>
-                        <div>
-                            <span class="stat-value">03</span>
-                            <p>Core public sections with finished navigation and content.</p>
-                        </div>
-                        <div>
-                            <span class="stat-value">Git</span>
-                            <p>Static site hosted from the repository with a custom domain.</p>
-                        </div>
-                    </div>
-                    <div class="chip-row">
-                        <span class="status-chip">Site active</span>
-                        <span class="chip">Indie dev focus</span>
-                        <span class="chip">Static hosting</span>
+                    <span class="eyebrow">How this portfolio works</span>
+                    <h2>Short projects with real learning value</h2>
+                    <ul class="project-checklist">
+                        <li><strong>Play it:</strong> open the project page and test the build or current prototype state.</li>
+                        <li><strong>Study it:</strong> read the systems, mistakes, and build notes.</li>
+                        <li><strong>Rebuild it:</strong> use the walkthrough structure as a template for your own Unity practice.</li>
+                    </ul>
+                    <div class="meta-strip">
+                        <span class="status-badge live">Site live</span>
+                        <span class="meta-pill">Unity-first</span>
+                        <span class="meta-pill">Teach through projects</span>
                     </div>
                 </aside>
             </section>
 
-            <section class="content-grid">
-                <article class="content-card">
-                    <span class="section-label">Why This Exists</span>
-                    <h2>Less theory, more useful starting points.</h2>
-                    <p>
-                        The aim is to publish assets that shorten the distance between an idea and a first
-                        playable version: small prototypes, templates that remove admin friction, and scripts
-                        that can be adapted into real projects.
-                    </p>
-                </article>
-
-                <article class="content-card">
-                    <span class="section-label">What To Open First</span>
-                    <ul class="list-clean">
-                        <li><strong>Games:</strong> try the live Snake build and inspect how it is presented.</li>
-                        <li><strong>Documents:</strong> use the planning material as a base for production work.</li>
-                        <li><strong>Scripts:</strong> follow the reusable code direction planned for future releases.</li>
-                    </ul>
-                </article>
-            </section>
-
             <section>
-                <span class="section-label">Core Areas</span>
-                <div class="feature-grid">
-                    <article class="feature-card">
-                        <h3>Games</h3>
-                        <p>Playable experiments and compact builds that show ideas in motion instead of staying abstract.</p>
+                <span class="section-label">Current Project Set</span>
+                <div class="project-grid">
+                    <article class="project-panel">
+                        <div class="project-card-head">
+                            <div>
+                                <span class="mini-heading">Starter project</span>
+                                <h2>Snake</h2>
+                            </div>
+                            <span class="status-badge live">Playable</span>
+                        </div>
+                        <p>The first public project page. It began as a Unity WebGL deployment test and now acts as the origin story for the site.</p>
+                        <ul>
+                            <li>What works in the deployed test build</li>
+                            <li>What would be needed for a complete tutorial-quality version</li>
+                            <li>How Unity deployment was validated</li>
+                        </ul>
                         <div class="panel-actions">
-                            <a class="button-ghost" href="/pages/content/games.html">Open games</a>
+                            <a class="button-primary" href="/pages/games/sub-pages/snake.html">Open project</a>
                         </div>
                     </article>
-                    <article class="feature-card">
-                        <h3>Documents & Templates</h3>
-                        <p>Production helpers for scoping, pitching, planning, and keeping a project financially sane.</p>
+
+                    <article class="project-panel">
+                        <div class="project-card-head">
+                            <div>
+                                <span class="mini-heading">Next lesson</span>
+                                <h2>Pong</h2>
+                            </div>
+                            <span class="status-badge writing">Page ready</span>
+                        </div>
+                        <p>A clean two-paddle arcade lesson built around collisions, scoring, and scene setup.</p>
+                        <ul>
+                            <li>Good first movement and collision tutorial</li>
+                            <li>Simple scoring and reset loops</li>
+                            <li>Strong candidate for a first complete walkthrough</li>
+                        </ul>
                         <div class="panel-actions">
-                            <a class="button-ghost" href="/pages/content/docs-temps.html">Open templates</a>
+                            <a class="button-ghost" href="/pages/games/sub-pages/pong.html">See lesson page</a>
                         </div>
                     </article>
-                    <article class="feature-card">
-                        <h3>Scripts</h3>
-                        <p>A growing area for reusable gameplay logic, systems breakdowns, and implementation notes.</p>
+
+                    <article class="project-panel">
+                        <div class="project-card-head">
+                            <div>
+                                <span class="mini-heading">Movement lesson</span>
+                                <h2>Top-Down Movement</h2>
+                            </div>
+                            <span class="status-badge writing">Page ready</span>
+                        </div>
+                        <p>A simple character-controller project focused on input, movement feel, and camera follow basics.</p>
+                        <ul>
+                            <li>Useful for later action or adventure projects</li>
+                            <li>Explains a reusable controller foundation</li>
+                            <li>Keeps scope tight and teachable</li>
+                        </ul>
                         <div class="panel-actions">
-                            <a class="button-ghost" href="/pages/content/scripts.html">Open scripts</a>
+                            <a class="button-ghost" href="/pages/games/sub-pages/top-down-movement.html">See lesson page</a>
                         </div>
                     </article>
                 </div>
             </section>
 
+            <section class="lesson-grid">
+                <article class="content-card">
+                    <span class="numbered-step">1</span>
+                    <h2>Small build</h2>
+                    <p>Keep each lesson compact enough to finish, publish, and explain honestly.</p>
+                </article>
+
+                <article class="content-card">
+                    <span class="numbered-step">2</span>
+                    <h2>Clear breakdown</h2>
+                    <p>Each project page should explain what the learner gets, how the systems fit together, and where mistakes happened.</p>
+                </article>
+
+                <article class="content-card">
+                    <span class="numbered-step">3</span>
+                    <h2>Reusable practice</h2>
+                    <p>The goal is not just to show finished work. It is to leave behind a pattern someone else can follow in Unity.</p>
+                </article>
+            </section>
+
             <section class="split-layout">
                 <article class="callout-panel">
-                    <span class="section-label">Featured Project</span>
-                    <h2>Project: Snake</h2>
+                    <span class="section-label">Project Standard</span>
+                    <h2>Every public project now follows the same teaching structure.</h2>
                     <p>
-                        The Snake prototype is the clearest example of the site direction: something small,
-                        playable, and tied back to the code and build that produced it.
+                        Overview, learning outcomes, project status, how it was built, key systems, mistakes, next steps,
+                        and links. That structure is what turns this from a UI shell into an actual portfolio and tutorial site.
                     </p>
                     <div class="panel-actions">
-                        <a class="button-primary" href="/pages/games/sub-pages/snake.html">Open project page</a>
-                        <a class="button-secondary" href="https://github.com/DarrensArtist/Project-Snake" target="_blank" rel="noreferrer">View game repo</a>
+                        <a class="button-primary" href="/pages/content/projects.html">View all projects</a>
+                        <a class="button-secondary" href="/pages/content/roadmap.html">View roadmap</a>
                     </div>
                 </article>
 
                 <aside class="info-panel">
-                    <span class="mini-heading">Near-term roadmap</span>
+                    <span class="mini-heading">What is not in the nav anymore</span>
                     <ul class="list-clean">
-                        <li>Expand the script library with reusable mechanics and utility snippets.</li>
-                        <li>Add more document packs around pitching, milestone planning, and budgeting.</li>
-                        <li>Publish the next playable prototype once the surrounding page is ready.</li>
+                        <li>No placeholder sections pretending to be live.</li>
+                        <li>No empty links for future content.</li>
+                        <li>No public pages without a clear purpose.</li>
                     </ul>
                 </aside>
             </section>
@@ -197,14 +219,13 @@
             <div class="footer-inner">
                 <div class="footer-copy">
                     <p>All The Scripts</p>
-                    <p>Static site for game-dev resources, hosted from GitHub.</p>
+                    <p>Small Unity projects, playable demos, and process notes for people learning by building.</p>
                 </div>
 
                 <div class="footer-links">
+                    <a href="/pages/content/projects.html">Projects</a>
+                    <a href="/pages/content/roadmap.html">Roadmap</a>
                     <a href="/pages/main/about-us.html">About</a>
-                    <a href="/pages/content/games.html">Games</a>
-                    <a href="/pages/content/docs-temps.html">Documents</a>
-                    <a href="/pages/content/scripts.html">Scripts</a>
                     <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">Repository</a>
                 </div>
             </div>

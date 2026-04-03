@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Project: Snake | All The Scripts</title>
-        <meta name="description" content="Play Project: Snake and inspect the repository behind the prototype.">
+        <title>Snake | All The Scripts</title>
+        <meta name="description" content="Play the Snake Unity deployment test and read how it became the first lesson page on All The Scripts.">
         <base href="/">
         <link rel="stylesheet" href="/styling/default-website-styling/universal-style-reset.css">
         <link rel="stylesheet" href="/styling/default-website-styling/default-styling.css">
@@ -18,24 +18,23 @@
         <nav class="navigation-top" aria-label="Utility">
             <ul class="navigation-main">
                 <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/content/projects.html" class="active">Projects</a></li>
+                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
                 <li><a href="/pages/main/about-us.html">About</a></li>
-                <li><a href="/pages/content/games.html" class="active">Games</a></li>
-                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
-                <li><a href="/pages/content/scripts.html">Scripts</a></li>
             </ul>
 
             <div class="navigation-meta">
-                <span>Featured playable prototype</span>
+                <span>First public Unity lesson page</span>
                 <a href="https://github.com/DarrensArtist/Project-Snake" target="_blank" rel="noreferrer">Project repo</a>
             </div>
         </nav>
 
         <div class="latest-additon-banner">
             <div class="latest-text-block">
-                <p>Project</p>
+                <p>Playable</p>
             </div>
-            <a href="/pages/content/games.html">
-                <p class="panning-text">This page now lives inside the same shared site shell as the rest of the public sections.</p>
+            <a href="/pages/content/projects.html">
+                <p class="panning-text">Snake began as a deployment proof-of-concept. This page now explains what that test actually taught.</p>
             </a>
         </div>
 
@@ -46,10 +45,9 @@
         <nav class="navigation-overlay" id="navigation-overlay" aria-label="Mobile">
             <ul>
                 <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/content/projects.html">Projects</a></li>
+                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
                 <li><a href="/pages/main/about-us.html">About</a></li>
-                <li><a href="/pages/content/games.html">Games</a></li>
-                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
-                <li><a href="/pages/content/scripts.html">Scripts</a></li>
             </ul>
         </nav>
 
@@ -65,62 +63,68 @@
             </div>
 
             <div class="search-button">
-                <a href="https://github.com/DarrensArtist/Project-Snake" target="_blank" rel="noreferrer">Repo</a>
+                <a href="/pages/content/projects.html">Projects</a>
             </div>
         </header>
 
         <nav class="navigation-bottom" aria-label="Primary">
             <ul class="navigation-content">
                 <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/content/projects.html" class="active">Projects</a></li>
+                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
                 <li><a href="/pages/main/about-us.html">About</a></li>
-                <li><a href="/pages/content/games.html" class="active">Games</a></li>
-                <li><a href="/pages/content/docs-temps.html">Documents & Templates</a></li>
-                <li><a href="/pages/content/scripts.html">Scripts</a></li>
             </ul>
         </nav>
 
         <main class="main-content">
             <section class="page-hero">
-                <span class="section-label">Project: Snake</span>
-                <h1>A compact prototype with a playable build and a clear path back to the code.</h1>
-                <p>
-                    This page is the current benchmark for game entries on the site: a short summary, the live build,
-                    and direct links to the repository instead of filler panels or dead embeds.
+                <span class="section-label">Snake</span>
+                <h1>An honest starting project: first deployed as a Unity WebGL test, now documented as a lesson page.</h1>
+                <p class="lede">
+                    This is not yet a full tutorial-quality Snake remake. It is the first useful milestone in the site:
+                    proof that a Unity build can be hosted, embedded, and turned into a documented project page.
                 </p>
+                <div class="meta-strip">
+                    <span class="status-badge live">Playable build</span>
+                    <span class="meta-pill">Unity WebGL</span>
+                    <span class="meta-pill">Deployment test</span>
+                </div>
                 <div class="panel-actions">
                     <a class="button-primary" href="https://github.com/DarrensArtist/Project-Snake" target="_blank" rel="noreferrer">Open project repo</a>
-                    <a class="button-secondary" href="/pages/content/games.html">Back to games</a>
+                    <a class="button-secondary" href="/pages/content/projects.html">Back to projects</a>
                 </div>
             </section>
 
-            <section class="split-layout">
-                <article class="project-panel">
-                    <span class="mini-heading">What this project shows</span>
-                    <h2>Small scope, visible output</h2>
-                    <p>
-                        Snake works well as a featured prototype because the rules are easy to read and the build
-                        gives the site an immediate hands-on example of what “play and build” can mean.
-                    </p>
+            <section class="detail-grid">
+                <article class="page-panel">
+                    <span class="section-label">Overview</span>
+                    <h3>What this page is really for</h3>
+                    <p>This project now serves as the first documented example of how a small Unity build moves from prototype into public lesson page.</p>
                     <ul>
-                        <li>Arcade-friendly scope</li>
-                        <li>Fast to understand</li>
-                        <li>Easy to extend with additional systems</li>
+                        <li>The Unity WebGL build loads on the site</li>
+                        <li>The project has a dedicated public page and source link</li>
+                        <li>The current scope is honest about what is still missing</li>
                     </ul>
                 </article>
 
-                <aside class="info-panel">
-                    <span class="mini-heading">Project links</span>
-                    <ul class="list-clean">
-                        <li><strong>Repository:</strong> DarrensArtist/Project-Snake</li>
-                        <li><strong>Hosted build:</strong> included directly on this page</li>
-                        <li><strong>Related section:</strong> games library and upcoming scripts area</li>
+                <article class="page-panel">
+                    <span class="section-label">What You'll Learn</span>
+                    <h3>Useful lessons even before the game is fully built</h3>
+                    <ul>
+                        <li>How to verify a Unity WebGL deployment path on a live static site</li>
+                        <li>How to frame a prototype honestly instead of overselling it</li>
+                        <li>What needs to exist before a project becomes tutorial-quality</li>
                     </ul>
-                </aside>
+                </article>
             </section>
 
             <section class="unity-shell">
+                <div class="play-state">
+                    <strong>Play It</strong>
+                    <p class="subtle-note">The embedded build below is the original deployment test. It proves the hosting path; it is not yet a complete teaching build.</p>
+                </div>
                 <div id="unity-container" class="unity-desktop">
-                    <canvas id="unity-canvas" width="960" height="600" tabindex="-1" aria-label="Project Snake game"></canvas>
+                    <canvas id="unity-canvas" width="960" height="600" tabindex="-1" aria-label="Snake Unity WebGL build"></canvas>
                     <div id="unity-loading-bar">
                         <div id="unity-logo"></div>
                         <div id="unity-progress-bar-empty">
@@ -135,20 +139,76 @@
                     </div>
                 </div>
             </section>
+
+            <section class="project-template">
+                <div class="detail-grid">
+                    <article class="page-panel">
+                        <span class="section-label">How It Was Built</span>
+                        <h3>Current implementation story</h3>
+                        <ul class="step-list">
+                            <li>Start with a minimal Unity project to confirm WebGL export works.</li>
+                            <li>Export the build and place the generated files into the static-site structure.</li>
+                            <li>Create a dedicated page that loads the build inside the site shell.</li>
+                            <li>Verify that the domain, asset paths, and fullscreen button work on the hosted site.</li>
+                        </ul>
+                    </article>
+
+                    <article class="page-panel">
+                        <span class="section-label">Key Systems</span>
+                        <h3>What is actually demonstrated right now</h3>
+                        <ul>
+                            <li>Unity WebGL build packaging</li>
+                            <li>Static hosting and path wiring</li>
+                            <li>Embedding a Unity canvas inside a content-driven page</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="detail-grid">
+                    <article class="page-panel">
+                        <span class="section-label">Build Notes / Mistakes</span>
+                        <h3>What this page is honest about</h3>
+                        <ul>
+                            <li>The current project is stronger as a deployment lesson than as a full game tutorial.</li>
+                            <li>The page used to present the prototype as more finished than it really was.</li>
+                            <li>The useful part was proving the pipeline, but that needed explaining clearly.</li>
+                        </ul>
+                    </article>
+
+                    <article class="page-panel">
+                        <span class="section-label">Next Steps</span>
+                        <h3>What would make this tutorial-quality</h3>
+                        <ul>
+                            <li>Implement a full playable Snake ruleset with restart and scoring.</li>
+                            <li>Add screenshots or short clips of the Unity scene and setup.</li>
+                            <li>Document the exact components, scripts, and scene objects needed to rebuild it from scratch.</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <article class="page-panel">
+                    <span class="section-label">Project Links</span>
+                    <h3>Where to inspect the code and the related site sections</h3>
+                    <ul class="link-list">
+                        <li><a href="https://github.com/DarrensArtist/Project-Snake" target="_blank" rel="noreferrer">Project Snake repository</a></li>
+                        <li><a href="/pages/content/projects.html">Projects library</a></li>
+                        <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
+                    </ul>
+                </article>
+            </section>
         </main>
 
         <footer class="footer">
             <div class="footer-inner">
                 <div class="footer-copy">
                     <p>All The Scripts</p>
-                    <p>Project pages should be usable, linkable, and worth revisiting.</p>
+                    <p>Snake is the first example of turning a deployment test into an honest lesson page.</p>
                 </div>
 
                 <div class="footer-links">
-                    <a href="/index.html">Home</a>
-                    <a href="/pages/content/games.html">Games</a>
-                    <a href="/pages/content/docs-temps.html">Documents</a>
-                    <a href="/pages/content/scripts.html">Scripts</a>
+                    <a href="/pages/content/projects.html">Projects</a>
+                    <a href="/pages/content/roadmap.html">Roadmap</a>
+                    <a href="/pages/main/about-us.html">About</a>
                     <a href="https://github.com/DarrensArtist/Project-Snake" target="_blank" rel="noreferrer">Project repo</a>
                 </div>
             </div>

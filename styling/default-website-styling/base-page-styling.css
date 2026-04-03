@@ -201,7 +201,11 @@
 .stats-grid,
 .resource-grid,
 .project-grid,
-.page-grid {
+.page-grid,
+.detail-grid,
+.roadmap-grid,
+.lesson-grid,
+.support-grid {
     display: grid;
     gap: 1.25rem;
 }
@@ -348,7 +352,9 @@
 .feature-grid,
 .resource-grid,
 .project-grid,
-.page-grid {
+.page-grid,
+.lesson-grid,
+.support-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -356,7 +362,9 @@
     grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
 }
 
-.content-grid {
+.content-grid,
+.detail-grid,
+.roadmap-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -395,6 +403,15 @@
     min-height: 100%;
 }
 
+.project-panel > * + *,
+.page-panel > * + *,
+.resource-card > * + *,
+.content-card > * + *,
+.callout-panel > * + *,
+.info-panel > * + * {
+    margin-top: 0.85rem;
+}
+
 .project-panel ul,
 .page-panel ul {
     display: grid;
@@ -405,6 +422,161 @@
 .project-panel li,
 .page-panel li {
     color: var(--color-text-muted);
+}
+
+.project-card-head,
+.lesson-card-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 32px;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    white-space: nowrap;
+}
+
+.status-badge.live,
+.status-badge.published {
+    color: var(--color-success);
+    border-color: rgba(143, 227, 107, 0.35);
+    background: rgba(143, 227, 107, 0.08);
+}
+
+.status-badge.prototype {
+    color: #ffd37a;
+    border-color: rgba(255, 211, 122, 0.35);
+    background: rgba(255, 211, 122, 0.08);
+}
+
+.status-badge.writing {
+    color: #8dd8ff;
+    border-color: rgba(141, 216, 255, 0.35);
+    background: rgba(141, 216, 255, 0.08);
+}
+
+.status-badge.idea {
+    color: var(--color-text-muted);
+}
+
+.meta-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.meta-pill {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.lede {
+    font-size: 1.03rem;
+    color: var(--color-text);
+}
+
+.hero-copy .lede,
+.page-hero .lede {
+    max-width: 68ch;
+}
+
+.project-spotlight {
+    display: grid;
+    gap: 1rem;
+}
+
+.project-spotlight li,
+.project-checklist li,
+.step-list li,
+.link-list li,
+.roadmap-list li {
+    color: var(--color-text-muted);
+}
+
+.project-checklist,
+.step-list,
+.link-list,
+.roadmap-list {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.support-grid .resource-card,
+.lesson-grid .content-card,
+.detail-grid .page-panel,
+.roadmap-grid .page-panel {
+    min-height: 100%;
+}
+
+.numbered-step {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.8rem;
+    border-radius: 999px;
+    background: var(--color-accent-soft);
+    border: 1px solid var(--color-border-strong);
+    color: var(--color-accent);
+    font-family: var(--font-heading);
+}
+
+.project-template {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.play-state {
+    display: grid;
+    gap: 0.75rem;
+    padding: 1rem;
+    border: 1px dashed var(--color-border-strong);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.play-state strong {
+    color: var(--color-text);
+}
+
+.roadmap-column {
+    display: grid;
+    gap: 1rem;
+}
+
+.roadmap-column h2 {
+    margin-bottom: 0.15rem;
+}
+
+.project-template h2,
+.project-template h3,
+.project-panel h3,
+.page-panel h3 {
+    margin-bottom: 0.45rem;
+}
+
+.subtle-note {
+    color: var(--color-text-muted);
+    font-size: 0.88rem;
 }
 
 .unity-shell {
