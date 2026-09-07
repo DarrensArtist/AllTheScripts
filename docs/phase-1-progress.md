@@ -49,4 +49,4 @@ Verified against `AllTheScripts-Website-Visual-Package-v1.zip`. The existing `as
 
 - [x] Verify all Phase 1 acceptance criteria.
 - [x] Create the major commit: Brand foundation and shared site shell.
-- [ ] Stop for Darren's review before beginning Phase 2.
+- [x] Stop for Darren's review before beginning Phase 2.

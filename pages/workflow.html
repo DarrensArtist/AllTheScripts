@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Workflow | AllTheScripts</title><meta name="description" content="Darren's maintained field manual for structured, AI-assisted game development."><link rel="canonical" href="https://allthescripts.uk/pages/workflow.html"><meta property="og:type" content="website"><meta property="og:title" content="Workflow | AllTheScripts"><meta property="og:description" content="Darren's maintained field manual for structured, AI-assisted game development."><base href="/">
+        <link rel="icon" href="/assets/brand/favicon.ico" sizes="any"><link rel="icon" type="image/png" href="/assets/brand/allthescripts-icon.png"><link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+        <link rel="stylesheet" href="/styling/default-website-styling/universal-style-reset.css"><link rel="stylesheet" href="/assets/css/site.css">
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+        <header class="site-header"><div class="site-header__inner"><a class="site-brand" href="/" aria-label="AllTheScripts home"><img src="/assets/brand/allthescripts-logo-primary.png" alt="AllTheScripts" width="1200" height="320"></a><button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation" data-menu-button><span class="menu-button__lines" aria-hidden="true"></span></button><nav class="site-nav" id="site-navigation" aria-label="Primary" data-site-navigation><ul class="site-nav__list"><li><a href="/pages/work.html">Work</a></li><li><a href="/pages/lab.html">Lab</a></li><li><a href="/pages/workflow.html">Workflow</a></li><li><a href="/pages/main/about-us.html">About</a></li></ul></nav></div></header>
+        <main class="main-content" id="main-content">
+            <header class="page-intro"><span class="section-label">Workflow</span><h1>A field manual for turning ideas into workable slices.</h1><p class="lede">This is the reusable structure I maintain for planning, implementing and validating game-development work with Codex. It is a working reference, not a blog or a prompt collection.</p></header>
+            <section aria-labelledby="workflow-process">
+                <div class="section-heading"><span class="section-label">Core process</span><h2 id="workflow-process">From idea to verified change</h2><p>The output at each stage becomes the grounded input for the next.</p></div>
+                <ol class="process-list">
+                    <li><div><strong>Shape the idea</strong><p>Turn the initial concept into a descriptive overview with a clear player experience, boundaries and unknowns.</p></div></li>
+                    <li><div><strong>Find modules and slices</strong><p>Break the overview into systems, dependencies and small pieces that can be completed and tested.</p></div></li>
+                    <li><div><strong>Write the task list</strong><p>Give Codex ordered work, acceptance criteria, preservation rules and explicit stopping points.</p></div></li>
+                    <li><div><strong>Implement in Unity</strong><p>Build one meaningful slice while keeping project, module and scene structure deliberate.</p></div></li>
+                    <li><div><strong>Validate the result</strong><p>Test behaviour, inspect the visible output and compare it with the agreed acceptance criteria.</p></div></li>
+                    <li><div><strong>Maintain documentation</strong><p>Record decisions, current limitations and the next useful boundary while the context is fresh.</p></div></li>
+                    <li><div><strong>Commit the slice</strong><p>Create a clear Git commit when a major slice is complete and verified.</p></div></li>
+                </ol>
+            </section>
+            <section aria-labelledby="workflow-library"><div class="section-heading"><span class="section-label">Field manual structure</span><h2 id="workflow-library">Designed to become reusable</h2></div><div class="editorial-grid"><article class="editorial-card"><h3>Planning structures</h3><p>Overviews, module maps and workable-slice definitions.</p><a class="text-link" href="/downloads/workable-slice-template.md" download>Download the workable-slice template</a></article><article class="editorial-card"><h3>Implementation checks</h3><p>Unity validation, documentation maintenance and honest completion criteria.</p></article><article class="editorial-card"><h3>Reusable assets</h3><p>Downloads and copy actions appear only for material that is concise enough to reuse directly.</p></article></div></section>
+            <section aria-labelledby="workflow-utility"><div class="section-heading"><span class="section-label">Quick utility</span><h2 id="workflow-utility">A short slice boundary</h2><p>The essential structure stays visible; extra explanation remains optional.</p></div><div class="copy-block"><pre id="slice-boundary">Result → Included → Excluded → Dependencies → Acceptance checks → Stop</pre><button class="button-secondary" type="button" aria-controls="slice-boundary" data-copy-button>Copy structure</button><p class="copy-feedback" data-copy-feedback role="status" aria-live="polite"></p></div><details class="disclosure"><summary>Why define the stop condition?</summary><div class="disclosure__content"><p>A clear completion boundary prevents one useful slice from quietly absorbing adjacent work. Remaining ideas become later tasks instead of unverified additions.</p></div></details></section>
+        </main>
+        <footer class="site-footer"><div class="site-footer__inner"><div class="site-footer__brand"><img src="/assets/brand/allthescripts-logo-on-dark.png" alt="AllTheScripts" width="1343" height="305" loading="lazy"></div><div class="site-footer__copy"><p>A focused game-development portfolio and public workspace for projects, prototypes, systems and reusable workflows.</p><nav class="site-footer__links" aria-label="Footer"><a href="/pages/work.html">Work</a><a href="/pages/lab.html">Lab</a><a href="/pages/workflow.html">Workflow</a><a href="/pages/main/about-us.html">About</a><a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">GitHub</a></nav></div></div></footer>
+        <script src="/assets/js/site-navigation.js"></script><script src="/assets/js/copy-utility.js"></script>
+    </body>
+</html>
