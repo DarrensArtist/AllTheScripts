@@ -9,75 +9,45 @@
             content="Play small Unity projects, study how they were made, and use the process notes to build your own."
         >
         <base href="/">
+        <link rel="icon" href="/assets/brand/favicon.ico" sizes="any">
+        <link rel="icon" type="image/png" href="/assets/brand/allthescripts-icon.png">
+        <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
         <link rel="stylesheet" href="/styling/default-website-styling/universal-style-reset.css">
-        <link rel="stylesheet" href="/styling/default-website-styling/default-styling.css">
-        <link rel="stylesheet" href="/styling/default-website-styling/base-page-styling.css">
-        <link rel="stylesheet" href="/styling/default-website-styling/responsive-design.css">
+        <link rel="stylesheet" href="/assets/css/site.css">
     </head>
 
     <body>
-        <nav class="navigation-top" aria-label="Utility">
-            <ul class="navigation-main">
-                <li><a href="/index.html" class="active">Home</a></li>
-                <li><a href="/pages/content/projects.html">Projects</a></li>
-                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
-                <li><a href="/pages/main/about-us.html">About</a></li>
-            </ul>
+        <a class="skip-link" href="#main-content">Skip to main content</a>
 
-            <div class="navigation-meta">
-                <span>Unity-first project-learning portfolio</span>
-                <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-        </nav>
+        <header class="site-header">
+            <div class="site-header__inner">
+                <a class="site-brand" href="/" aria-label="AllTheScripts home">
+                    <img src="/assets/brand/allthescripts-logo-primary.png" alt="AllTheScripts" width="1200" height="320">
+                </a>
 
-        <div class="latest-additon-banner">
-            <div class="latest-text-block">
-                <p>Live now</p>
-            </div>
-            <a href="/pages/games/sub-pages/snake.html">
-                <p class="panning-text">Play the Snake deployment test, then read the breakdown of what worked and what still needs building.</p>
-            </a>
-        </div>
+                <button
+                    class="menu-button"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="site-navigation"
+                    aria-label="Open navigation"
+                    data-menu-button
+                >
+                    <span class="menu-button__lines" aria-hidden="true"></span>
+                </button>
 
-        <header class="header">
-            <img class="logo-header" src="/assets/art/logo-header.png" alt="All The Scripts">
-        </header>
-
-        <nav class="navigation-overlay" id="navigation-overlay" aria-label="Mobile">
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/pages/content/projects.html">Projects</a></li>
-                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
-                <li><a href="/pages/main/about-us.html">About</a></li>
-            </ul>
-        </nav>
-
-        <header class="responsive-design-header">
-            <button class="hamburger" id="hamburger-btn" type="button" aria-label="Open menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <div class="responsive-design-logo">
-                <img src="/assets/art/logo-header.png" alt="All The Scripts">
-            </div>
-
-            <div class="search-button">
-                <a href="/pages/content/projects.html">Projects</a>
+                <nav class="site-nav" id="site-navigation" aria-label="Primary" data-site-navigation>
+                    <ul class="site-nav__list">
+                        <li><a href="/pages/content/projects.html">Work</a></li>
+                        <li><a href="/pages/games/sub-pages/snake.html">Lab</a></li>
+                        <li><a href="/pages/content/docs-temps.html">Workflow</a></li>
+                        <li><a href="/pages/main/about-us.html">About</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
-        <nav class="navigation-bottom" aria-label="Primary">
-            <ul class="navigation-content">
-                <li><a href="/index.html" class="active">Home</a></li>
-                <li><a href="/pages/content/projects.html">Projects</a></li>
-                <li><a href="/pages/content/roadmap.html">Roadmap</a></li>
-                <li><a href="/pages/main/about-us.html">About</a></li>
-            </ul>
-        </nav>
-
-        <main class="main-content">
+        <main class="main-content" id="main-content">
             <section class="hero-grid">
                 <div class="hero-copy">
                     <span class="section-label">Unity Project Lessons</span>
@@ -215,23 +185,25 @@
             </section>
         </main>
 
-        <footer class="footer">
-            <div class="footer-inner">
-                <div class="footer-copy">
-                    <p>All The Scripts</p>
-                    <p>Small Unity projects, playable demos, and process notes for people learning by building.</p>
+        <footer class="site-footer">
+            <div class="site-footer__inner">
+                <div class="site-footer__brand">
+                    <img src="/assets/brand/allthescripts-logo-on-dark.png" alt="AllTheScripts" width="1343" height="305" loading="lazy">
                 </div>
 
-                <div class="footer-links">
-                    <a href="/pages/content/projects.html">Projects</a>
-                    <a href="/pages/content/roadmap.html">Roadmap</a>
-                    <a href="/pages/main/about-us.html">About</a>
-                    <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">Repository</a>
+                <div class="site-footer__copy">
+                    <p>A focused game-development portfolio and public workspace for projects, prototypes, systems and reusable workflows.</p>
+                    <nav class="site-footer__links" aria-label="Footer">
+                        <a href="/pages/content/projects.html">Work</a>
+                        <a href="/pages/games/sub-pages/snake.html">Lab</a>
+                        <a href="/pages/content/docs-temps.html">Workflow</a>
+                        <a href="/pages/main/about-us.html">About</a>
+                        <a href="https://github.com/DarrensArtist/AllTheScripts" target="_blank" rel="noreferrer">GitHub</a>
+                    </nav>
                 </div>
             </div>
         </footer>
 
-        <script src="/scripts/toggle-menu-visibility.js"></script>
-        <script src="/scripts/hide-reveal-header.js"></script>
+        <script src="/assets/js/site-navigation.js"></script>
     </body>
 </html>
