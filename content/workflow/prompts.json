@@ -1,0 +1,14 @@
+[
+  {"id":"project-brief","title":"Project Brief","category":"Definition","workflowStage":"Project definition","summary":"Turn the initial idea into an agreed project boundary.","status":"content-needed"},
+  {"id":"module-map","title":"Module Map","category":"Architecture","workflowStage":"Module map","summary":"Identify permanent system ownership before planning implementation.","status":"content-needed"},
+  {"id":"module-requirements","title":"Module Requirements","category":"Requirements","workflowStage":"Module requirements","summary":"Define one module's responsibilities, inputs, outputs and constraints.","status":"content-needed"},
+  {"id":"slice-specification","title":"Slice Specification","category":"Planning","workflowStage":"Slice specifications","summary":"Describe a temporary, testable unit of work across module boundaries.","status":"content-needed"},
+  {"id":"task-list","title":"Task List","category":"Planning","workflowStage":"Task lists","summary":"Convert an approved slice into ordered, verifiable actions.","status":"content-needed"},
+  {"id":"documentation-audit","title":"Documentation Audit","category":"Audit","workflowStage":"Documentation audit","summary":"Check that the plan is complete enough to implement safely.","status":"content-needed"},
+  {"id":"implementation-session","title":"Implementation Session","category":"Execution","workflowStage":"Implementation","summary":"Start bounded implementation with the right context and controls.","status":"content-needed"},
+  {"id":"test-plan","title":"Test Plan","category":"Verification","workflowStage":"Testing","summary":"Translate requirements into observable checks and evidence.","status":"content-needed"},
+  {"id":"controlled-revision","title":"Controlled Revision","category":"Change","workflowStage":"Controlled revision","summary":"Assess and apply a change without losing approved intent.","status":"content-needed"},
+  {"id":"experience-review","title":"Experience Review","category":"Review","workflowStage":"Project definition","summary":"Challenge whether the intended player experience is coherent.","status":"content-needed"},
+  {"id":"handoff-resume","title":"Handoff and Resume","category":"Continuity","workflowStage":"Implementation","summary":"Capture current state so work can restart without reconstruction.","status":"content-needed"},
+  {"id":"recovery","title":"Recovery","category":"Recovery","workflowStage":"Controlled revision","summary":"Diagnose drift or failure and return to the last trusted state.","status":"content-needed"}
+]

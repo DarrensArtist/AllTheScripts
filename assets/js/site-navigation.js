@@ -5,10 +5,12 @@ const mobileNavigationQuery = window.matchMedia('(max-width: 48rem)');
 const normalisePath = (path) => path.replace(/index\.html$/, '').replace(/\/$/, '') || '/';
 const currentPath = normalisePath(window.location.pathname);
 
-document.querySelectorAll('.site-nav a, .site-footer__links a').forEach((link) => {
+document.querySelectorAll('.site-nav a, .site-footer__links a, .workflow-local-nav a').forEach((link) => {
     const linkPath = normalisePath(new URL(link.href, window.location.href).pathname);
+    const isGlobalWorkflowLink = link.closest('.site-nav, .site-footer__links') && linkPath === '/workflow';
+    const isWorkflowParent = isGlobalWorkflowLink && currentPath.startsWith('/workflow');
 
-    if (link.origin === window.location.origin && linkPath === currentPath) {
+    if (link.origin === window.location.origin && (linkPath === currentPath || isWorkflowParent)) {
         link.setAttribute('aria-current', 'page');
     }
 });

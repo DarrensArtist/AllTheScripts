@@ -9,7 +9,7 @@ AllTheScripts is Darren's focused game-development portfolio and public workspac
 - `/pages/work/7-is-watching.html` — developing flagship case-study skeleton
 - `/pages/lab.html` — prototypes, technical demonstrations and experiments
 - `/pages/games/sub-pages/snake.html` — Project Snake Unity WebGL deployment proof of concept
-- `/pages/workflow.html` — reusable game-development field manual
+- `/workflow/` — reusable game-development field manual
 - `/pages/main/about-us.html` — first-person About page
 
 Legacy public routes use static HTML redirects so existing links resolve to an appropriate replacement. `CNAME` preserves the `allthescripts.uk` GitHub Pages domain.
