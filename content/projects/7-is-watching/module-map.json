@@ -1,0 +1,88 @@
+{
+  "project": "7 Is Watching",
+  "version": "development-preview-1",
+  "status": "under-development",
+  "placeholderContent": true,
+  "notice": "The labels and descriptions in this preview are structural placeholders. They do not define the final game architecture.",
+  "modules": [
+    {
+      "id": "project-core",
+      "index": "01",
+      "name": "Project Core",
+      "shortDescription": "A reserved position for the systems that establish the project's shared foundation.",
+      "status": "Awaiting project documentation",
+      "colour": "#d8ae62",
+      "slices": [
+        { "id": "core-slice-a", "index": "01A", "name": "Foundation Slice", "description": "Development placeholder awaiting the approved Slice map and specification." },
+        { "id": "core-slice-b", "index": "01B", "name": "Integration Slice", "description": "Development placeholder awaiting the approved Slice map and specification." },
+        { "id": "core-slice-c", "index": "01C", "name": "Validation Slice", "description": "Development placeholder awaiting the approved Slice map and specification." }
+      ]
+    },
+    {
+      "id": "player-experience",
+      "index": "02",
+      "name": "Player Experience",
+      "shortDescription": "A reserved position for the player's moment-to-moment experience and interaction loop.",
+      "status": "Awaiting project documentation",
+      "colour": "#ba5a46",
+      "slices": [
+        { "id": "player-slice-a", "index": "02A", "name": "Interaction Slice", "description": "Development placeholder awaiting the approved Slice map and specification." },
+        { "id": "player-slice-b", "index": "02B", "name": "Feedback Slice", "description": "Development placeholder awaiting the approved Slice map and specification." },
+        { "id": "player-slice-c", "index": "02C", "name": "Flow Slice", "description": "Development placeholder awaiting the approved Slice map and specification." },
+        { "id": "player-slice-d", "index": "02D", "name": "Validation Slice", "description": "Development placeholder awaiting the approved Slice map and specification." }
+      ]
+    },
+    {
+      "id": "world-encounters",
+      "index": "03",
+      "name": "World & Encounters",
+      "shortDescription": "A reserved position for the spaces, encounters and rules that shape a play session.",
+      "status": "Awaiting project documentation",
+      "colour": "#7e3f49",
+      "slices": [
+        { "id": "world-slice-a", "index": "03A", "name": "World Slice", "description": "Development placeholder awaiting the approved Slice map and specification." },
+        { "id": "world-slice-b", "index": "03B", "name": "Encounter Slice", "description": "Development placeholder awaiting the approved Slice map and specification." },
+        { "id": "world-slice-c", "index": "03C", "name": "Rules Slice", "description": "Development placeholder awaiting the approved Slice map and specification." }
+      ]
+    },
+    {
+      "id": "progression",
+      "index": "04",
+      "name": "Progression",
+      "shortDescription": "A reserved position for progression, persistence and the changing state of a run.",
+      "status": "Awaiting project documentation",
+      "colour": "#4d5361",
+      "slices": [
+        { "id": "progression-slice-a", "index": "04A", "name": "State Slice", "description": "Development placeholder awaiting the approved Slice map and specification." },
+        { "id": "progression-slice-b", "index": "04B", "name": "Progression Slice", "description": "Development placeholder awaiting the approved Slice map and specification." },
+        { "id": "progression-slice-c", "index": "04C", "name": "Persistence Slice", "description": "Development placeholder awaiting the approved Slice map and specification." }
+      ]
+    },
+    {
+      "id": "interface",
+      "index": "05",
+      "name": "Interface",
+      "shortDescription": "A reserved position for presentation of information and player-facing controls.",
+      "status": "Awaiting project documentation",
+      "colour": "#606f69",
+      "slices": [
+        { "id": "interface-slice-a", "index": "05A", "name": "Information Slice", "description": "Development placeholder awaiting the approved Slice map and specification." },
+        { "id": "interface-slice-b", "index": "05B", "name": "Control Slice", "description": "Development placeholder awaiting the approved Slice map and specification." },
+        { "id": "interface-slice-c", "index": "05C", "name": "Accessibility Slice", "description": "Development placeholder awaiting the approved Slice map and specification." }
+      ]
+    },
+    {
+      "id": "presentation",
+      "index": "06",
+      "name": "Presentation",
+      "shortDescription": "A reserved position for the visual, audio and atmospheric layers of the game.",
+      "status": "Awaiting project documentation",
+      "colour": "#8d7653",
+      "slices": [
+        { "id": "presentation-slice-a", "index": "06A", "name": "Visual Slice", "description": "Development placeholder awaiting the approved Slice map and specification." },
+        { "id": "presentation-slice-b", "index": "06B", "name": "Audio Slice", "description": "Development placeholder awaiting the approved Slice map and specification." },
+        { "id": "presentation-slice-c", "index": "06C", "name": "Atmosphere Slice", "description": "Development placeholder awaiting the approved Slice map and specification." }
+      ]
+    }
+  ]
+}
