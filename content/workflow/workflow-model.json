@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "principle": "Conversations produce decisions. Approved documents preserve decisions.",
+  "tracks": [
+    {
+      "id": "baseline",
+      "name": "Initial Baseline",
+      "caption": "Establish the project's approved design and implementation boundaries.",
+      "stages": [
+        {"id":"idea-workspace","short":"Idea","type":"workspace","workspace":"Persistent ChatGPT chat","agent":"Creator + normal ChatGPT","receives":"Open questions, observations and creative possibilities","produces":"Creator-approved Idea-Brief.md","complete":"The brief is approved for design work; the workspace remains open","return":"Any new mechanic, content, presentation thought, experiment or refinement"},
+        {"id":"game-design-workspace","short":"Design","type":"workspace","workspace":"Persistent ChatGPT Work chat","agent":"Design Agent · High reasoning","receives":"Approved Idea-Brief.md","produces":"Creator-approved Game-Design-Brief.md","complete":"Game-level design is architecture-ready and approved","return":"A change affects game-level design"},
+        {"id":"game-design-bible","short":"Bible","type":"maintenance","workspace":"Initial operation, then continuous maintenance","agent":"Bible Maintenance Agent","receives":"Approved design truth","produces":"Maintained Game Design Bible","complete":"Current approved truth has an authoritative home","return":"Any approved design truth changes"},
+        {"id":"architecture-workspace","short":"Architecture","type":"workspace","workspace":"Persistent ChatGPT Work chat","agent":"Architecture Agent · Extra High reasoning","receives":"Approved Game Design Brief and relevant Bible context","produces":"Architecture.md and Module-Map.md","complete":"Architecture review and creator approval pass","return":"Capabilities, ownership, authority, dependencies or major relationships change"},
+        {"id":"module-workspace","short":"Modules","type":"workspace","workspace":"One persistent Work chat per module","agent":"Module Agent → Slice Agent","receives":"Architecture, Module Map entry and relevant Bible truth","produces":"Approved Module Requirements, Slice Map and Slice specifications","complete":"The per-module readiness gate passes","return":"Requirements or slicing for that module change"},
+        {"id":"slice-specifications","short":"Slices","type":"document","workspace":"Module Work chat","agent":"Slice Agent","receives":"Approved Module Requirements","produces":"Complete Slice Map and approved specifications","complete":"Every currently required Slice is approved","return":"Delivery boundaries or acceptance evidence change"},
+        {"id":"codex-module-workspace","short":"Implementation","type":"repository","workspace":"One persistent Codex chat per module","agent":"Codex","receives":"Repository reality, AGENTS.md, Architecture, Module Requirements and current Slice","produces":"Tested implementation and checkpoint evidence","complete":"Self-validation and independent validation complete","return":"An approved Slice or implementation change affects the module"},
+        {"id":"validation","short":"Validation","type":"gate","workspace":"Independent validation operation","agent":"Validation Agent","receives":"Implementation evidence and authoritative specification","produces":"Pass, Pass With Deviations, Fail or Blocked","complete":"Outcome is recorded and routed","return":"Every meaningful Slice, Module, integration, prototype or milestone"}
+      ]
+    },
+    {
+      "id": "continuous",
+      "name": "Continuous Development",
+      "caption": "Allow the game to evolve without bypassing ownership or losing current truth.",
+      "stages": [
+        {"id":"brainstorm","short":"Brainstorm","type":"workspace","workspace":"Persistent Idea Workspace","agent":"Creator + normal ChatGPT","receives":"New ideas and evidence","produces":"A candidate change","complete":"The creator chooses whether it should proceed","return":"Creativity can return here at any time"},
+        {"id":"creator-approval","short":"Approve","type":"gate","workspace":"Creator decision","agent":"Creator","receives":"Candidate change and useful evidence","produces":"Approved, rejected or deferred decision","complete":"The authority status is explicit","return":"A revised candidate is ready"},
+        {"id":"update-owning-truth","short":"Update truth","type":"document","workspace":"Owning specialist context","agent":"Owning agent","receives":"Approved change","produces":"Updated authoritative document","complete":"Current truth records the decision","return":"A later approved change affects the same truth"},
+        {"id":"capability-impact-check","short":"Assess impact","type":"gate","workspace":"Routing operation","agent":"Architecture Agent when capability ownership is unclear","receives":"Updated design truth","produces":"Content-only, existing-module or architecture route","complete":"The highest affected ownership level is known","return":"Every approved change"},
+        {"id":"re-enter","short":"Re-enter","type":"workspace","workspace":"Existing owning workspace","agent":"Owning specialist agent","receives":"Updated truth and impact route","produces":"Revised downstream specification","complete":"Affected authoritative boundaries agree","return":"Requirements or slicing need revision"},
+        {"id":"propagate-implement","short":"Implement","type":"repository","workspace":"Existing Codex module chat","agent":"Codex","receives":"Revised approved specification and repository reality","produces":"Updated implementation and evidence","complete":"The bounded change is tested","return":"Implementation must follow approved truth"},
+        {"id":"revalidation","short":"Validate","type":"gate","workspace":"Independent validation operation","agent":"Validation Agent","receives":"Changed implementation and authoritative specification","produces":"Recorded validation outcome","complete":"The change is accepted or routed back","return":"After each meaningful approved implementation change"}
+      ]
+    }
+  ]
+}

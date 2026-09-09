@@ -1,25 +1,32 @@
-# Workflow area implementation
+# Workflow 1.0 implementation
 
-Source: AllTheScripts Workflow Area Design Brief.
+Source: AllTheScripts Workflow 1.0 Full Replacement Design Brief.
 
 ## Implemented and ready for review
 
-- [x] Clean Workflow routes and redirects from legacy URLs
-- [x] Shared global and local Workflow navigation
-- [x] Blueprint-at-dusk visual system and responsive layout
-- [x] Ten-stage interactive overview
-- [x] Process reference with phases, stage gates and execution controls
-- [x] Structure reference with locked trees and Asset Placement Explorer
-- [x] AI responsibility, context, review, recovery and audit strategy
-- [x] Prompt Library metadata source and twelve content destinations
-- [x] Clipboard fallback selects text for manual copying
+- [x] Existing route family, global shell and local navigation retained
+- [x] Initial Baseline and Continuous Development presented as connected systems
+- [x] Responsive, keyboard-operable Workflow Explorer
+- [x] Chats, Documents, Agents and Repository authority model
+- [x] Start, Change and Return visitor routes
+- [x] Persistent workspace stages and Game Design Bible maintenance
+- [x] Per-module implementation readiness control
+- [x] Inspect-first Codex cycle and four Validation outcomes
+- [x] Capability Impact Check and controlled re-entry
+- [x] Experimental and production implementation distinction
+- [x] Safe concurrency decision control and sequential merge model
+- [x] Documentation hierarchy and authority lookup
+- [x] Correct single-module Slice ownership
+- [x] Correct Chips ownership for ChipDefinition
+- [x] Full agent directory, workspace maps and Project Librarian
+- [x] Workflow 1.0 prompt schema and 24 prompt contracts
 
 ## Awaiting approved content
 
-- [ ] Final cleaned body for each of the twelve prompt entries
-- [ ] Enable prompt copy controls after bodies are approved
-- [ ] Add filters when the quantity of approved content makes them useful
+- [ ] Approved copyable body for each prompt record
+- [ ] Last-reviewed date for each approved prompt
+- [ ] Copy controls, enabled only as bodies are approved
 
 ## Review gate
 
-This implementation is intentionally held before commit and deployment until visual and content-structure review is complete.
+The implementation is intentionally uncommitted until the Workflow 1.0 replacement receives creator review.
