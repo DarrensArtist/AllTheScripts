@@ -7,10 +7,12 @@ const currentPath = normalisePath(window.location.pathname);
 
 document.querySelectorAll('.site-nav a, .site-footer__links a, .workflow-local-nav a').forEach((link) => {
     const linkPath = normalisePath(new URL(link.href, window.location.href).pathname);
+    const isGlobalWorldsLink = link.closest('.site-nav, .site-footer__links') && linkPath === '/pages/work.html';
     const isGlobalWorkflowLink = link.closest('.site-nav, .site-footer__links') && linkPath === '/workflow';
+    const isWorldsParent = isGlobalWorldsLink && (currentPath.startsWith('/pages/work/') || currentPath.startsWith('/pages/wiki/'));
     const isWorkflowParent = isGlobalWorkflowLink && currentPath.startsWith('/workflow');
 
-    if (link.origin === window.location.origin && (linkPath === currentPath || isWorkflowParent)) {
+    if (link.origin === window.location.origin && (linkPath === currentPath || isWorldsParent || isWorkflowParent)) {
         link.setAttribute('aria-current', 'page');
     }
 });
