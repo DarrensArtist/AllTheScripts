@@ -1,10 +1,33 @@
 # AllTheScripts
 
+## ATS-AIOS project home
+
+This is the authoritative ATS-AIOS home for the AllTheScripts website. The existing site documentation and repository are preserved as inherited project evidence; the project’s defining intent and IDIC stage outputs have not yet been reviewed or approved through ATS-AIOS.
+
+The [Website Design Brief](Design/Website-Design-Brief.md) and [Website Architecture](Design/Website-Architecture.md) define the initial guide skeleton. The site presents ATS-AIOS as the main product while preserving the AllTheScripts logo, using the actual app as a visual reference, and leaving unfinished app-area pages as explainers. The website Home has a Pocket Companion showcase that cycles through games as illustrative media; the actual feature remains in its app destination. Website pages do not reproduce app operations or expose workspace folders. Commercialisation remains a possibility, not a commitment.
+
+- [Project state](Project-State.md) — current position and re-entry point.
+- [Idea](Idea/) — concept source and future foundational changes.
+- [Design](Design/) — current website experience and software Architecture.
+- [Implement](Implement/) — skeleton implementation plan and handoffs.
+- [Configure](Configure/) — site content and configuration.
+- [Development - AllTheScripts](Development%20-%20AllTheScripts-Website/) — existing website repository and source.
+
+The project root is also the Git repository root, so ATS-AIOS project documents and the development source remain in one repository.
+
 AllTheScripts is Darren's focused game-development portfolio and public workspace. The static site presents substantial work, focused prototypes and reusable development workflows without requiring a content-management system or build pipeline.
+
+## Current website direction
+
+The website is being reshaped into an app-like guide with ATS-AIOS as the main feature. It remains a plain static site; guide navigation is not an app login or an operational tool. Capability descriptions use current ATS-AIOS definitions and distinguish definition from project use and validation. The four examples are drawn from approved Against the Horde requirements and must not be described as passed runtime tests.
 
 ## Public structure
 
-- `/` — selective portfolio homepage
+- `/` — ATS-AIOS guide home and Pocket Companion preview
+- `/#method` — how the directed development method works
+- `/#capabilities` — current source-led capability overview
+- `/#examples` — four requirement-based examples
+- `/#app-guide` and guide anchors — explanatory app-area skeletons
 - `/pages/work.html` — substantial games and projects
 - `/pages/work/7-is-watching.html` — developing flagship case-study skeleton
 - `/pages/lab.html` — prototypes, technical demonstrations and experiments
@@ -16,9 +39,11 @@ Legacy public routes use static HTML redirects so existing links resolve to an a
 
 ## Implementation
 
-The site is plain HTML, CSS and JavaScript. Shared design tokens and components live in `assets/css/site.css`; mobile navigation, copy utilities and the intentional Unity launcher live in `assets/js`. Approved public identity exports live in `assets/brand`.
+The source site is plain HTML, CSS and JavaScript under `Development - AllTheScripts-Website/`. The ATS-AIOS guide shell uses `assets/css/ats-aios-guide.css` and `assets/js/ats-aios-guide.js`; the previous shared site styles and pages remain available for supporting and legacy routes. Approved public identity exports remain in `assets/brand`.
 
 Unity WebGL files remain under `build/ProjectSnake`. They are loaded only when a visitor explicitly launches the proof of concept from its Lab entry.
+
+GitHub Pages deployment is defined by `.github/workflows/deploy-pages.yml`. It publishes the website source from the nested development folder while preserving that new source root, the custom-domain CNAME, and Project Snake. The workflow excludes project coordination documents, development notes, temporary files, and the served page template from the public artifact.
 
 ## Adding content
 
